@@ -117,8 +117,8 @@ export const AVISO_SIN_REPO = [
   'Componer, buscar, inspeccionar y validar funcionan igual: data/ viaja con la skill.',
   'Para reconstruir la biblioteca o enseñarle diseños nuevos, clona el repo:',
   '',
-  '  git clone https://github.com/1Ley/UA---unicode-aesthetic-SKILL-.git',
-  '  cd UA---unicode-aesthetic-SKILL-',
+  '  git clone https://github.com/1Ley/UA_SKILL-unicode-aesthetic.git',
+  '  cd UA_SKILL-unicode-aesthetic',
   '  node skills/ua/scripts/ua.mjs probar',
 ].join('\n');
 

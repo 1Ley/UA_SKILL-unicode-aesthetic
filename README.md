@@ -58,7 +58,7 @@ Lo más rápido es pedírselo a Claude. Copia esto y pégaselo tal cual:
 ```
 Instala la skill UA en mi Claude Code.
 
-Repositorio: https://github.com/1Ley/UA---unicode-aesthetic-SKILL-
+Repositorio: https://github.com/1Ley/UA_SKILL-unicode-aesthetic
 
 Clona el repo en una carpeta temporal, copia la carpeta skills/ua a mi
 directorio de skills personales y borra el temporal. Ese directorio es
@@ -77,7 +77,7 @@ dependencias de npm.
 ### Si prefieres hacerlo a mano
 
 ```bash
-git clone https://github.com/1Ley/UA---unicode-aesthetic-SKILL-.git /tmp/ua
+git clone https://github.com/1Ley/UA_SKILL-unicode-aesthetic.git /tmp/ua
 cp -r /tmp/ua/skills/ua ~/.claude/skills/ua
 rm -rf /tmp/ua
 node ~/.claude/skills/ua/scripts/ua.mjs perfiles
@@ -86,7 +86,7 @@ node ~/.claude/skills/ua/scripts/ua.mjs perfiles
 En Windows, con PowerShell:
 
 ```powershell
-git clone https://github.com/1Ley/UA---unicode-aesthetic-SKILL-.git $env:TEMP\ua-tmp
+git clone https://github.com/1Ley/UA_SKILL-unicode-aesthetic.git $env:TEMP\ua-tmp
 Copy-Item -Recurse $env:TEMP\ua-tmp\skills\ua $env:USERPROFILE\.claude\skills\ua
 Remove-Item -Recurse -Force $env:TEMP\ua-tmp
 node $env:USERPROFILE\.claude\skills\ua\scripts\ua.mjs perfiles
@@ -95,7 +95,7 @@ node $env:USERPROFILE\.claude\skills\ua\scripts\ua.mjs perfiles
 ### Como plugin
 
 ```
-/plugin marketplace add 1Ley/UA---unicode-aesthetic-SKILL-
+/plugin marketplace add 1Ley/UA_SKILL-unicode-aesthetic
 /plugin install ua@ua-unicode-aesthetic
 ```
 
