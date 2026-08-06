@@ -96,6 +96,32 @@ export function existe(p) {
   return fs.existsSync(p);
 }
 
+/**
+ * ¿Está la skill dentro del repositorio completo, o instalada suelta?
+ *
+ * Instalada en ~/.claude/skills/ua solo viaja la carpeta de la skill: `data/` va
+ * dentro, así que componer, inspeccionar y validar funcionan igual. Lo que no viaja
+ * es `tools/`, y por tanto reconstruir la biblioteca o aplicar una ingesta necesitan
+ * el repo. Conviene decirlo con claridad en vez de reventar con un stack trace.
+ */
+export function tieneRepoCompleto() {
+  return fs.existsSync(path.join(RAIZ_REPO, 'tools', 'construir-datos.mjs'));
+}
+
+export const AVISO_SIN_REPO = [
+  'Este comando necesita el repositorio completo, y la skill está instalada suelta.',
+  '',
+  `  Instalada en : ${RAIZ_SKILL}`,
+  '  Falta        : tools/ (el generador de la biblioteca y la suite de pruebas)',
+  '',
+  'Componer, buscar, inspeccionar y validar funcionan igual: data/ viaja con la skill.',
+  'Para reconstruir la biblioteca o enseñarle diseños nuevos, clona el repo:',
+  '',
+  '  git clone https://github.com/1Ley/UA---unicode-aesthetic-SKILL-.git',
+  '  cd UA---unicode-aesthetic-SKILL-',
+  '  node skills/ua/scripts/ua.mjs probar',
+].join('\n');
+
 /** Lee de un archivo o de stdin cuando la ruta es `-`. */
 export async function leerEntrada(ruta) {
   if (ruta && ruta !== '-') return leerTexto(ruta);

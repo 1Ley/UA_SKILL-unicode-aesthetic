@@ -53,18 +53,43 @@ croquis en ASCII donde forma, densidad, ritmo y simetría sí se leen bien.
 
 ## Instalación
 
-### Como skill personal
+Lo más rápido es pedírselo a Claude. Copia esto y pégaselo tal cual:
+
+```
+Instala la skill UA en mi Claude Code.
+
+Repositorio: https://github.com/1Ley/UA---unicode-aesthetic-SKILL-
+
+Clona el repo en una carpeta temporal, copia la carpeta skills/ua a mi
+directorio de skills personales y borra el temporal. Ese directorio es
+~/.claude/skills/ en macOS y Linux, y %USERPROFILE%\.claude\skills\ en Windows.
+
+Al terminar, comprueba que quedó bien ejecutando:
+node <ruta-del-directorio>/ua/scripts/ua.mjs perfiles
+
+Si sale la lista de perfiles y superficies, está lista. Abre una sesión nueva
+para que la cargue.
+```
+
+Hace falta Node.js 18 o superior. No hay que instalar nada más: la skill no tiene
+dependencias de npm.
+
+### Si prefieres hacerlo a mano
 
 ```bash
 git clone https://github.com/1Ley/UA---unicode-aesthetic-SKILL-.git /tmp/ua
 cp -r /tmp/ua/skills/ua ~/.claude/skills/ua
+rm -rf /tmp/ua
+node ~/.claude/skills/ua/scripts/ua.mjs perfiles
 ```
 
-En Windows con PowerShell:
+En Windows, con PowerShell:
 
 ```powershell
-git clone https://github.com/1Ley/UA---unicode-aesthetic-SKILL-.git $env:TEMP\ua
-Copy-Item -Recurse $env:TEMP\ua\skills\ua $env:USERPROFILE\.claude\skills\ua
+git clone https://github.com/1Ley/UA---unicode-aesthetic-SKILL-.git $env:TEMP\ua-tmp
+Copy-Item -Recurse $env:TEMP\ua-tmp\skills\ua $env:USERPROFILE\.claude\skills\ua
+Remove-Item -Recurse -Force $env:TEMP\ua-tmp
+node $env:USERPROFILE\.claude\skills\ua\scripts\ua.mjs perfiles
 ```
 
 ### Como plugin
@@ -74,7 +99,33 @@ Copy-Item -Recurse $env:TEMP\ua\skills\ua $env:USERPROFILE\.claude\skills\ua
 /plugin install ua@ua-unicode-aesthetic
 ```
 
-Luego invócala con `/ua`, o simplemente pide algo decorado: la skill se activa sola.
+### Usarla
+
+Abre una sesión nueva y pide lo que quieras sin más: "hazme un separador para el canal
+de normas", "decórame la bio de Instagram". La skill se activa sola por su descripción.
+También responde a `/ua` si prefieres invocarla explícitamente.
+
+### Sobre Cowork
+
+El formato de skill es el mismo en Claude Code y en Cowork: `SKILL.md` con el mismo
+frontmatter y la misma estructura de carpetas. La skill no usa navegador, ni pantalla,
+ni subagentes, que es lo que suele diferenciar un entorno del otro; solo necesita poder
+ejecutar Node.
+
+Dicho esto, **solo la he verificado de extremo a extremo en Claude Code**. En Cowork la
+vía razonable es el plugin, porque el directorio donde guarda las skills lo gestiona su
+propia sincronización y copiar cosas ahí a mano es frágil. Si la pruebas ahí, cuéntame
+qué tal.
+
+### Instalada suelta vs. repo completo
+
+Copiando solo `skills/ua` tienes todo lo de uso diario: componer, buscar, inspeccionar
+y validar. `data/` viaja con la skill.
+
+Lo que necesita el repo entero es reconstruir la biblioteca (`construir-datos`),
+aplicar una ingesta (`aprender --aplicar`) y la suite de pruebas (`probar`), porque
+viven en `tools/`. Si los invocas con la skill instalada suelta, te lo dice y te da el
+comando para clonar; no falla de mala manera.
 
 ## Uso
 

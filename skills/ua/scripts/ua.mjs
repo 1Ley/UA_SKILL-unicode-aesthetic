@@ -12,6 +12,7 @@
 
 import {
   argumentos, leerEntrada, escribirTexto, emitirConGemelo, ErrorUA,
+  tieneRepoCompleto, AVISO_SIN_REPO,
 } from './lib/io.mjs';
 import { cargar, buscar, vecinos, esqueleto, unidad } from './lib/biblioteca.mjs';
 import { analizar, formatear } from './lib/inspeccionar.mjs';
@@ -170,6 +171,9 @@ async function cmdAprender(a) {
   const an = analizarIngesta(texto, { perfil: a.perfil, paleta: a.paleta });
   console.log(informe(an));
   if (!a.aplicar) return 0;
+  // El simulacro funciona instalada suelta; aplicar escribe en el corpus semilla y
+  // reconstruye, y para eso hace falta el repo.
+  if (!tieneRepoCompleto()) { console.error('\n' + AVISO_SIN_REPO); return 1; }
   console.log('\nAplicando…');
   const r = await aplicar(an);
   console.log(r.salida);
@@ -178,6 +182,7 @@ async function cmdAprender(a) {
 }
 
 async function cmdProbar() {
+  if (!tieneRepoCompleto()) { console.error(AVISO_SIN_REPO); return 1; }
   const { spawnSync } = await import('node:child_process');
   const path = await import('node:path');
   const { RAIZ_REPO } = await import('./lib/io.mjs');
