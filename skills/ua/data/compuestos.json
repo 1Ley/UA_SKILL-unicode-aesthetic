@@ -1,0 +1,1495 @@
+{
+  "version": 1,
+  "ucd": "16.0.0",
+  "generado_por": "tools/construir-datos.mjs",
+  "aviso": "Generado. No editar a mano: los cambios se pierden. El criterio humano va en tools/semilla/curacion.json; el vocabulario, en tools/semilla/corpus-crudo.txt.",
+  "total": 45,
+  "compuestos": [
+    {
+      "id": "cmp.medefaidrin.2",
+      "cp": [
+        93805,
+        3764
+      ],
+      "hex": [
+        "16E6D",
+        "0EB4"
+      ],
+      "miembros": [
+        "par.medefaidri.medefaidrin-a",
+        "sig.lao.lao-i"
+      ],
+      "utf16": 3,
+      "marcas": 1,
+      "rol": "par",
+      "gc": "--",
+      "peso_visual": 2,
+      "croquis": "*.",
+      "tier": "riesgo",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "botanico-pastel"
+      ],
+      "frecuencia": 1,
+      "origen": [
+        "cps.0002"
+      ],
+      "revisado": false
+    },
+    {
+      "id": "cmp.tulip.2",
+      "cp": [
+        127799,
+        6834
+      ],
+      "hex": [
+        "1F337",
+        "1AB2"
+      ],
+      "miembros": [
+        "anc.emoji.tulip",
+        "sig.comb.infinity"
+      ],
+      "utf16": 3,
+      "marcas": 1,
+      "rol": "anc",
+      "gc": "--",
+      "peso_visual": 4,
+      "croquis": "x.",
+      "tier": "moderno",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "botanico-pastel"
+      ],
+      "frecuencia": 1,
+      "origen": [
+        "cps.0003"
+      ],
+      "revisado": false
+    },
+    {
+      "id": "cmp.serif-e.2",
+      "cp": [
+        120254,
+        6838
+      ],
+      "hex": [
+        "1D5BE",
+        "1AB6"
+      ],
+      "miembros": [
+        "par.matalfa.serif-e",
+        "sig.comb.line-below-2"
+      ],
+      "utf16": 3,
+      "marcas": 1,
+      "rol": "par",
+      "gc": "--",
+      "peso_visual": 2,
+      "croquis": "*.",
+      "tier": "moderno",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "botanico-pastel"
+      ],
+      "frecuencia": 1,
+      "origen": [
+        "cps.0003"
+      ],
+      "revisado": false
+    },
+    {
+      "id": "cmp.dango.2",
+      "cp": [
+        127841,
+        6760
+      ],
+      "hex": [
+        "1F361",
+        "1A68"
+      ],
+      "miembros": [
+        "anc.emoji.dango",
+        "sig.tai-tham.tham-uue"
+      ],
+      "utf16": 3,
+      "marcas": 1,
+      "rol": "anc",
+      "gc": "--",
+      "peso_visual": 4,
+      "croquis": "x.",
+      "tier": "riesgo",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "kawaii-comida"
+      ],
+      "frecuencia": 1,
+      "origen": [
+        "cps.0004"
+      ],
+      "revisado": false
+    },
+    {
+      "id": "cmp.serif-m.2",
+      "cp": [
+        120262,
+        44013
+      ],
+      "hex": [
+        "1D5C6",
+        "ABED"
+      ],
+      "miembros": [
+        "sig.meetei.apun-iyek"
+      ],
+      "utf16": 3,
+      "marcas": 1,
+      "rol": "par",
+      "gc": "--",
+      "peso_visual": 2,
+      "croquis": "?.",
+      "tier": "moderno",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "kawaii-comida"
+      ],
+      "frecuencia": 1,
+      "origen": [
+        "cps.0004"
+      ],
+      "revisado": false
+    },
+    {
+      "id": "cmp.latin-alpha.2",
+      "cp": [
+        593,
+        860
+      ],
+      "hex": [
+        "0251",
+        "035C"
+      ],
+      "miembros": [
+        "sig.comb.breve-below"
+      ],
+      "utf16": 2,
+      "marcas": 1,
+      "rol": "par",
+      "gc": "--",
+      "peso_visual": 2,
+      "croquis": "?.",
+      "tier": "universal",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "botanico-pastel"
+      ],
+      "frecuencia": 1,
+      "origen": [
+        "cps.0005"
+      ],
+      "revisado": false
+    },
+    {
+      "id": "cmp.ring-fingers.3",
+      "cp": [
+        128406,
+        127995,
+        6759
+      ],
+      "hex": [
+        "1F596",
+        "1F3FB",
+        "1A67"
+      ],
+      "miembros": [
+        "anc.emoji.ring-fingers",
+        "anc.emoji.1-2",
+        "sig.tai-tham.tham-ue"
+      ],
+      "utf16": 5,
+      "marcas": 1,
+      "rol": "anc",
+      "gc": "--",
+      "peso_visual": 4,
+      "croquis": "xx",
+      "tier": "riesgo",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "botanico-pastel"
+      ],
+      "frecuencia": 1,
+      "origen": [
+        "cps.0005"
+      ],
+      "revisado": false
+    },
+    {
+      "id": "cmp.latin-alpha.2-2",
+      "cp": [
+        593,
+        11647
+      ],
+      "hex": [
+        "0251",
+        "2D7F"
+      ],
+      "miembros": [
+        "sig.tifinagh.tifinagh-joiner"
+      ],
+      "utf16": 2,
+      "marcas": 1,
+      "rol": "par",
+      "gc": "--",
+      "peso_visual": 2,
+      "croquis": "?.",
+      "tier": "moderno",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "kawaii-comida"
+      ],
+      "frecuencia": 1,
+      "origen": [
+        "cps.0006"
+      ],
+      "revisado": false
+    },
+    {
+      "id": "cmp.low-ring.2",
+      "cp": [
+        755,
+        65039
+      ],
+      "hex": [
+        "02F3",
+        "FE0F"
+      ],
+      "miembros": [
+        "par.modif.low-ring",
+        "sig.varsel.selector-16"
+      ],
+      "utf16": 2,
+      "marcas": 1,
+      "rol": "par",
+      "gc": "--",
+      "peso_visual": 1,
+      "croquis": "*.",
+      "tier": "universal",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "botanico-pastel"
+      ],
+      "frecuencia": 1,
+      "origen": [
+        "cps.0010"
+      ],
+      "revisado": false
+    },
+    {
+      "id": "cmp.hieroglyph-h.2",
+      "cp": [
+        78215,
+        2282
+      ],
+      "hex": [
+        "13187",
+        "08EA"
+      ],
+      "miembros": [
+        "par.egipcio.hieroglyph-h008",
+        "sig.arabe.dot-above"
+      ],
+      "utf16": 3,
+      "marcas": 1,
+      "rol": "par",
+      "gc": "--",
+      "peso_visual": 2,
+      "croquis": "*.",
+      "tier": "moderno",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "kawaii-comida"
+      ],
+      "frecuencia": 1,
+      "origen": [
+        "cps.0013"
+      ],
+      "revisado": false
+    },
+    {
+      "id": "cmp.mantelpiece.2",
+      "cp": [
+        128368,
+        65039
+      ],
+      "hex": [
+        "1F570",
+        "FE0F"
+      ],
+      "miembros": [
+        "par.emoji.mantelpiece-clock",
+        "sig.varsel.selector-16"
+      ],
+      "utf16": 3,
+      "marcas": 1,
+      "rol": "par",
+      "gc": "--",
+      "peso_visual": 2,
+      "croquis": "*.",
+      "tier": "universal",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "etereo"
+      ],
+      "frecuencia": 1,
+      "origen": [
+        "cps.0014"
+      ],
+      "revisado": false
+    },
+    {
+      "id": "cmp.railway-trac.2",
+      "cp": [
+        128740,
+        65039
+      ],
+      "hex": [
+        "1F6E4",
+        "FE0F"
+      ],
+      "miembros": [
+        "anc.emoji.railway-track",
+        "sig.varsel.selector-16"
+      ],
+      "utf16": 3,
+      "marcas": 1,
+      "rol": "anc",
+      "gc": "--",
+      "peso_visual": 3,
+      "croquis": "x.",
+      "tier": "universal",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "etereo"
+      ],
+      "frecuencia": 1,
+      "origen": [
+        "cps.0032"
+      ],
+      "revisado": false
+    },
+    {
+      "id": "cmp.asterisk.2",
+      "cp": [
+        42,
+        3267
+      ],
+      "hex": [
+        "002A",
+        "0CC3"
+      ],
+      "miembros": [
+        "sig.kannada.vocalic-r"
+      ],
+      "utf16": 2,
+      "marcas": 1,
+      "rol": "par",
+      "gc": "--",
+      "peso_visual": 2,
+      "croquis": "?.",
+      "tier": "universal",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "kawaii-comida"
+      ],
+      "frecuencia": 3,
+      "origen": [
+        "cps.0033"
+      ],
+      "revisado": false
+    },
+    {
+      "id": "cmp.circular-arc.6",
+      "cp": [
+        9693,
+        3787,
+        2286,
+        6916,
+        12442,
+        43766
+      ],
+      "hex": [
+        "25DD",
+        "0ECB",
+        "08EE",
+        "1B04",
+        "309A",
+        "AAF6"
+      ],
+      "miembros": [
+        "par.geo.circular-arc-2",
+        "sig.lao.mai-catawa",
+        "sig.arabe.dots-below",
+        "sig.bali.balinese-bisah",
+        "sig.hiragana.voiced-sound",
+        "sig.mayek-exte.mayek-virama"
+      ],
+      "utf16": 6,
+      "marcas": 5,
+      "rol": "par",
+      "gc": "--",
+      "peso_visual": 2,
+      "croquis": "*.",
+      "tier": "riesgo",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "kawaii-comida"
+      ],
+      "frecuencia": 1,
+      "origen": [
+        "cps.0033"
+      ],
+      "revisado": false
+    },
+    {
+      "id": "cmp.heart-suit.2",
+      "cp": [
+        9825,
+        8405
+      ],
+      "hex": [
+        "2661",
+        "20D5"
+      ],
+      "miembros": [
+        "anc.simbolo.heart-suit",
+        "sig.comb.arrow-above"
+      ],
+      "utf16": 2,
+      "marcas": 1,
+      "rol": "anc",
+      "gc": "--",
+      "peso_visual": 3,
+      "croquis": "x.",
+      "tier": "universal",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "kawaii-comida"
+      ],
+      "frecuencia": 1,
+      "origen": [
+        "cps.0033"
+      ],
+      "revisado": false
+    },
+    {
+      "id": "cmp.oriya-7.2",
+      "cp": [
+        2925,
+        805
+      ],
+      "hex": [
+        "0B6D",
+        "0325"
+      ],
+      "miembros": [
+        "cor.oriya.oriya-7",
+        "sig.comb.ring-below"
+      ],
+      "utf16": 2,
+      "marcas": 1,
+      "rol": "cor",
+      "gc": "--",
+      "peso_visual": 3,
+      "croquis": "[.",
+      "tier": "universal",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "kawaii-comida"
+      ],
+      "frecuencia": 2,
+      "origen": [
+        "cps.0035"
+      ],
+      "revisado": false
+    },
+    {
+      "id": "cmp.pointing-tri.2",
+      "cp": [
+        9654,
+        65038
+      ],
+      "hex": [
+        "25B6",
+        "FE0E"
+      ],
+      "miembros": [
+        "par.geo.pointing-triangle-3",
+        "sig.varsel.selector-15"
+      ],
+      "utf16": 2,
+      "marcas": 1,
+      "rol": "par",
+      "gc": "--",
+      "peso_visual": 2,
+      "croquis": "*.",
+      "tier": "universal",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "etereo"
+      ],
+      "frecuencia": 1,
+      "origen": [
+        "cps.0040"
+      ],
+      "revisado": false
+    },
+    {
+      "id": "cmp.myanmar-sect.6",
+      "cp": [
+        4171,
+        8204,
+        8204,
+        8204,
+        8204,
+        8204
+      ],
+      "hex": [
+        "104B",
+        "200C",
+        "200C",
+        "200C",
+        "200C",
+        "200C"
+      ],
+      "miembros": [
+        "par.myanmar.myanmar-section",
+        "par.punt.non-joiner",
+        "par.punt.non-joiner",
+        "par.punt.non-joiner",
+        "par.punt.non-joiner",
+        "par.punt.non-joiner"
+      ],
+      "utf16": 6,
+      "marcas": 0,
+      "rol": "par",
+      "gc": "--",
+      "peso_visual": 2,
+      "croquis": "**",
+      "tier": "universal",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "etereo"
+      ],
+      "frecuencia": 1,
+      "origen": [
+        "cps.0040"
+      ],
+      "revisado": false
+    },
+    {
+      "id": "cmp.low-line.3",
+      "cp": [
+        65103,
+        776,
+        769
+      ],
+      "hex": [
+        "FE4F",
+        "0308",
+        "0301"
+      ],
+      "miembros": [
+        "fil.cjkcomp.low-line",
+        "sig.comb.diaeresis",
+        "sig.comb.acute"
+      ],
+      "utf16": 3,
+      "marcas": 2,
+      "rol": "fil",
+      "gc": "--",
+      "peso_visual": 2,
+      "croquis": "~.",
+      "tier": "universal",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "monolinea"
+      ],
+      "frecuencia": 13,
+      "origen": [
+        "cps.0041"
+      ],
+      "revisado": false
+    },
+    {
+      "id": "cmp.shade.2",
+      "cp": [
+        9617,
+        8415
+      ],
+      "hex": [
+        "2591",
+        "20DF"
+      ],
+      "miembros": [
+        "trz.bloque.shade",
+        "sig.comb.enclosing-diamond"
+      ],
+      "utf16": 2,
+      "marcas": 1,
+      "rol": "trz",
+      "gc": "--",
+      "peso_visual": 2,
+      "croquis": "-.",
+      "tier": "universal",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "monolinea"
+      ],
+      "frecuencia": 1,
+      "origen": [
+        "cps.0041"
+      ],
+      "revisado": false
+    },
+    {
+      "id": "cmp.cross.2",
+      "cp": [
+        735,
+        811
+      ],
+      "hex": [
+        "02DF",
+        "032B"
+      ],
+      "miembros": [
+        "par.modif.cross",
+        "sig.comb.arch-below"
+      ],
+      "utf16": 2,
+      "marcas": 1,
+      "rol": "par",
+      "gc": "--",
+      "peso_visual": 1,
+      "croquis": "*.",
+      "tier": "universal",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "monolinea"
+      ],
+      "frecuencia": 1,
+      "origen": [
+        "cps.0041"
+      ],
+      "revisado": false
+    },
+    {
+      "id": "cmp.latin-s.2",
+      "cp": [
+        115,
+        65069
+      ],
+      "hex": [
+        "0073",
+        "FE2D"
+      ],
+      "miembros": [
+        "sig.half-marks.macron-below"
+      ],
+      "utf16": 2,
+      "marcas": 1,
+      "rol": "par",
+      "gc": "--",
+      "peso_visual": 2,
+      "croquis": "?.",
+      "tier": "riesgo",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "tinta"
+      ],
+      "frecuencia": 1,
+      "origen": [
+        "cps.0042"
+      ],
+      "revisado": false
+    },
+    {
+      "id": "cmp.fraktur-t.2",
+      "cp": [
+        120217,
+        65069
+      ],
+      "hex": [
+        "1D599",
+        "FE2D"
+      ],
+      "miembros": [
+        "par.matalfa.fraktur-t",
+        "sig.half-marks.macron-below"
+      ],
+      "utf16": 3,
+      "marcas": 1,
+      "rol": "par",
+      "gc": "--",
+      "peso_visual": 2,
+      "croquis": "*.",
+      "tier": "riesgo",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "tinta"
+      ],
+      "frecuencia": 1,
+      "origen": [
+        "cps.0042"
+      ],
+      "revisado": false
+    },
+    {
+      "id": "cmp.serif-a.2",
+      "cp": [
+        120250,
+        65069
+      ],
+      "hex": [
+        "1D5BA",
+        "FE2D"
+      ],
+      "miembros": [
+        "par.matalfa.serif-a",
+        "sig.half-marks.macron-below"
+      ],
+      "utf16": 3,
+      "marcas": 1,
+      "rol": "par",
+      "gc": "--",
+      "peso_visual": 2,
+      "croquis": "*.",
+      "tier": "riesgo",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "tinta"
+      ],
+      "frecuencia": 1,
+      "origen": [
+        "cps.0042"
+      ],
+      "revisado": false
+    },
+    {
+      "id": "cmp.serif-r.2",
+      "cp": [
+        120267,
+        65069
+      ],
+      "hex": [
+        "1D5CB",
+        "FE2D"
+      ],
+      "miembros": [
+        "par.matalfa.serif-r",
+        "sig.half-marks.macron-below"
+      ],
+      "utf16": 3,
+      "marcas": 1,
+      "rol": "par",
+      "gc": "--",
+      "peso_visual": 2,
+      "croquis": "*.",
+      "tier": "riesgo",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "tinta"
+      ],
+      "frecuencia": 1,
+      "origen": [
+        "cps.0042"
+      ],
+      "revisado": false
+    },
+    {
+      "id": "cmp.serif-s.2",
+      "cp": [
+        120268,
+        65069
+      ],
+      "hex": [
+        "1D5CC",
+        "FE2D"
+      ],
+      "miembros": [
+        "par.matalfa.serif-s",
+        "sig.half-marks.macron-below"
+      ],
+      "utf16": 3,
+      "marcas": 1,
+      "rol": "par",
+      "gc": "--",
+      "peso_visual": 2,
+      "croquis": "*.",
+      "tier": "riesgo",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "tinta"
+      ],
+      "frecuencia": 1,
+      "origen": [
+        "cps.0042"
+      ],
+      "revisado": false
+    },
+    {
+      "id": "cmp.left-parenth.2",
+      "cp": [
+        65077,
+        865
+      ],
+      "hex": [
+        "FE35",
+        "0361"
+      ],
+      "miembros": [
+        "fil.cjkcomp.left-parenthesis",
+        "sig.comb.inverted-breve"
+      ],
+      "utf16": 2,
+      "marcas": 1,
+      "rol": "fil",
+      "gc": "--",
+      "peso_visual": 2,
+      "croquis": "(.",
+      "tier": "universal",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "etereo"
+      ],
+      "frecuencia": 1,
+      "origen": [
+        "cps.0043"
+      ],
+      "revisado": false
+    },
+    {
+      "id": "cmp.monospace-f.2",
+      "cp": [
+        120463,
+        863
+      ],
+      "hex": [
+        "1D68F",
+        "035F"
+      ],
+      "miembros": [
+        "par.matalfa.monospace-f",
+        "sig.comb.macron-below"
+      ],
+      "utf16": 3,
+      "marcas": 1,
+      "rol": "par",
+      "gc": "--",
+      "peso_visual": 2,
+      "croquis": "*.",
+      "tier": "universal",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "etereo"
+      ],
+      "frecuencia": 1,
+      "origen": [
+        "cps.0043"
+      ],
+      "revisado": false
+    },
+    {
+      "id": "cmp.monospace-l.2",
+      "cp": [
+        120469,
+        863
+      ],
+      "hex": [
+        "1D695",
+        "035F"
+      ],
+      "miembros": [
+        "par.matalfa.monospace-l",
+        "sig.comb.macron-below"
+      ],
+      "utf16": 3,
+      "marcas": 1,
+      "rol": "par",
+      "gc": "--",
+      "peso_visual": 2,
+      "croquis": "*.",
+      "tier": "universal",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "etereo"
+      ],
+      "frecuencia": 1,
+      "origen": [
+        "cps.0043"
+      ],
+      "revisado": false
+    },
+    {
+      "id": "cmp.monospace-u.2",
+      "cp": [
+        120478,
+        863
+      ],
+      "hex": [
+        "1D69E",
+        "035F"
+      ],
+      "miembros": [
+        "par.matalfa.monospace-u",
+        "sig.comb.macron-below"
+      ],
+      "utf16": 3,
+      "marcas": 1,
+      "rol": "par",
+      "gc": "--",
+      "peso_visual": 2,
+      "croquis": "*.",
+      "tier": "universal",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "etereo"
+      ],
+      "frecuencia": 1,
+      "origen": [
+        "cps.0043"
+      ],
+      "revisado": false
+    },
+    {
+      "id": "cmp.monospace-r.2",
+      "cp": [
+        120475,
+        863
+      ],
+      "hex": [
+        "1D69B",
+        "035F"
+      ],
+      "miembros": [
+        "par.matalfa.monospace-r",
+        "sig.comb.macron-below"
+      ],
+      "utf16": 3,
+      "marcas": 1,
+      "rol": "par",
+      "gc": "--",
+      "peso_visual": 2,
+      "croquis": "*.",
+      "tier": "universal",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "etereo"
+      ],
+      "frecuencia": 2,
+      "origen": [
+        "cps.0043"
+      ],
+      "revisado": false
+    },
+    {
+      "id": "cmp.italic-m.2",
+      "cp": [
+        120418,
+        863
+      ],
+      "hex": [
+        "1D662",
+        "035F"
+      ],
+      "miembros": [
+        "par.matalfa.italic-m-2",
+        "sig.comb.macron-below"
+      ],
+      "utf16": 3,
+      "marcas": 1,
+      "rol": "par",
+      "gc": "--",
+      "peso_visual": 2,
+      "croquis": "*.",
+      "tier": "universal",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "etereo"
+      ],
+      "frecuencia": 1,
+      "origen": [
+        "cps.0044"
+      ],
+      "revisado": false
+    },
+    {
+      "id": "cmp.italic-o.2",
+      "cp": [
+        120420,
+        863
+      ],
+      "hex": [
+        "1D664",
+        "035F"
+      ],
+      "miembros": [
+        "par.matalfa.italic-o",
+        "sig.comb.macron-below"
+      ],
+      "utf16": 3,
+      "marcas": 1,
+      "rol": "par",
+      "gc": "--",
+      "peso_visual": 2,
+      "croquis": "*.",
+      "tier": "universal",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "etereo"
+      ],
+      "frecuencia": 2,
+      "origen": [
+        "cps.0044"
+      ],
+      "revisado": false
+    },
+    {
+      "id": "cmp.yi-shy.3",
+      "cp": [
+        42160,
+        3968,
+        3954
+      ],
+      "hex": [
+        "A4B0",
+        "0F80",
+        "0F72"
+      ],
+      "miembros": [
+        "cor.yi.yi-shy",
+        "sig.tibet.reversed-i",
+        "sig.tibet.tibetan-i"
+      ],
+      "utf16": 3,
+      "marcas": 2,
+      "rol": "cor",
+      "gc": "--",
+      "peso_visual": 3,
+      "croquis": "[.",
+      "tier": "moderno",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "kawaii-cara"
+      ],
+      "frecuencia": 1,
+      "origen": [
+        "cps.0051"
+      ],
+      "revisado": false
+    },
+    {
+      "id": "cmp.hyphen-minus.2",
+      "cp": [
+        45,
+        7621
+      ],
+      "hex": [
+        "002D",
+        "1DC5"
+      ],
+      "miembros": [
+        "sig.comb.grave-macron"
+      ],
+      "utf16": 2,
+      "marcas": 1,
+      "rol": "par",
+      "gc": "--",
+      "peso_visual": 2,
+      "croquis": "?.",
+      "tier": "moderno",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "kawaii-cara"
+      ],
+      "frecuencia": 1,
+      "origen": [
+        "cps.0051"
+      ],
+      "revisado": false
+    },
+    {
+      "id": "cmp.hyphen-minus.2-2",
+      "cp": [
+        45,
+        7620
+      ],
+      "hex": [
+        "002D",
+        "1DC4"
+      ],
+      "miembros": [
+        "sig.comb.macron-acute"
+      ],
+      "utf16": 2,
+      "marcas": 1,
+      "rol": "par",
+      "gc": "--",
+      "peso_visual": 2,
+      "croquis": "?.",
+      "tier": "moderno",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "kawaii-cara"
+      ],
+      "frecuencia": 1,
+      "origen": [
+        "cps.0051"
+      ],
+      "revisado": false
+    },
+    {
+      "id": "cmp.yi-vep.3",
+      "cp": [
+        42161,
+        3968,
+        3954
+      ],
+      "hex": [
+        "A4B1",
+        "0F80",
+        "0F72"
+      ],
+      "miembros": [
+        "cor.yi.yi-vep",
+        "sig.tibet.reversed-i",
+        "sig.tibet.tibetan-i"
+      ],
+      "utf16": 3,
+      "marcas": 2,
+      "rol": "cor",
+      "gc": "--",
+      "peso_visual": 3,
+      "croquis": "].",
+      "tier": "moderno",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "kawaii-cara"
+      ],
+      "frecuencia": 1,
+      "origen": [
+        "cps.0051"
+      ],
+      "revisado": false
+    },
+    {
+      "id": "cmp.right-parent.3",
+      "cp": [
+        41,
+        3968,
+        3954
+      ],
+      "hex": [
+        "0029",
+        "0F80",
+        "0F72"
+      ],
+      "miembros": [
+        "sig.tibet.reversed-i",
+        "sig.tibet.tibetan-i"
+      ],
+      "utf16": 3,
+      "marcas": 2,
+      "rol": "par",
+      "gc": "--",
+      "peso_visual": 2,
+      "croquis": "?.",
+      "tier": "moderno",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "kawaii-cara"
+      ],
+      "frecuencia": 1,
+      "origen": [
+        "cps.0052"
+      ],
+      "revisado": false
+    },
+    {
+      "id": "cmp.right-arrowh.4",
+      "cp": [
+        707,
+        822,
+        804,
+        769
+      ],
+      "hex": [
+        "02C3",
+        "0336",
+        "0324",
+        "0301"
+      ],
+      "miembros": [
+        "par.modif.right-arrowhead",
+        "sig.comb.stroke-overlay",
+        "sig.comb.diaeresis-below",
+        "sig.comb.acute"
+      ],
+      "utf16": 4,
+      "marcas": 3,
+      "rol": "par",
+      "gc": "--",
+      "peso_visual": 1,
+      "croquis": "*.",
+      "tier": "universal",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "kawaii-cara"
+      ],
+      "frecuencia": 1,
+      "origen": [
+        "cps.0054"
+      ],
+      "revisado": false
+    },
+    {
+      "id": "cmp.left-arrowhe.4",
+      "cp": [
+        706,
+        822,
+        804,
+        768
+      ],
+      "hex": [
+        "02C2",
+        "0336",
+        "0324",
+        "0300"
+      ],
+      "miembros": [
+        "par.modif.left-arrowhead",
+        "sig.comb.stroke-overlay",
+        "sig.comb.diaeresis-below",
+        "sig.comb.grave"
+      ],
+      "utf16": 4,
+      "marcas": 3,
+      "rol": "par",
+      "gc": "--",
+      "peso_visual": 1,
+      "croquis": "*.",
+      "tier": "universal",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "kawaii-cara"
+      ],
+      "frecuencia": 1,
+      "origen": [
+        "cps.0054"
+      ],
+      "revisado": false
+    },
+    {
+      "id": "cmp.cloud.2",
+      "cp": [
+        9729,
+        65039
+      ],
+      "hex": [
+        "2601",
+        "FE0F"
+      ],
+      "miembros": [
+        "par.simbolo.cloud",
+        "sig.varsel.selector-16"
+      ],
+      "utf16": 2,
+      "marcas": 1,
+      "rol": "par",
+      "gc": "--",
+      "peso_visual": 2,
+      "croquis": "*.",
+      "tier": "universal",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "botanico-pastel"
+      ],
+      "frecuencia": 1,
+      "origen": [
+        "cps.0058"
+      ],
+      "revisado": false
+    },
+    {
+      "id": "cmp.par-oriya",
+      "cp": [
+        2920,
+        2919
+      ],
+      "hex": [
+        "0B68",
+        "0B67"
+      ],
+      "nombre": "par oriya",
+      "miembros": [
+        "cor.oriya.oriya-2",
+        "cor.oriya.oriya-1"
+      ],
+      "utf16": 2,
+      "grafemas": 2,
+      "rol": "cor",
+      "croquis": "()",
+      "tier": "universal",
+      "motivo_tier": "mínimo de los miembros: 0B68=universal, 0B67=universal",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "botanico-pastel",
+        "etereo",
+        "monolinea"
+      ],
+      "frecuencia": 1,
+      "origen": [
+        "curacion"
+      ],
+      "revisado": true
+    },
+    {
+      "id": "cmp.corazon-tai-balines",
+      "cp": [
+        6507,
+        7009
+      ],
+      "hex": [
+        "196B",
+        "1B61"
+      ],
+      "nombre": "corazón tai-balinés",
+      "miembros": [
+        "anc.taile.le-e",
+        "anc.bali.musical-dong"
+      ],
+      "utf16": 2,
+      "grafemas": 2,
+      "rol": "anc",
+      "croquis": "v",
+      "tier": "riesgo",
+      "motivo_tier": "mínimo de los miembros: 196B=moderno, 1B61=riesgo",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "etereo",
+        "botanico-pastel"
+      ],
+      "frecuencia": 1,
+      "origen": [
+        "curacion"
+      ],
+      "revisado": true
+    },
+    {
+      "id": "cmp.corchetes-yi-vacios",
+      "cp": [
+        42160,
+        42161
+      ],
+      "hex": [
+        "A4B0",
+        "A4B1"
+      ],
+      "nombre": "corchetes yi vacíos",
+      "miembros": [
+        "cor.yi.yi-shy",
+        "cor.yi.yi-vep"
+      ],
+      "utf16": 2,
+      "grafemas": 2,
+      "rol": "cor",
+      "croquis": "[]",
+      "tier": "moderno",
+      "motivo_tier": "mínimo de los miembros: A4B0=moderno, A4B1=moderno",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "kawaii-cara"
+      ],
+      "frecuencia": 1,
+      "origen": [
+        "curacion"
+      ],
+      "revisado": true
+    },
+    {
+      "id": "cmp.particula-musical-co",
+      "cp": [
+        119108,
+        2282
+      ],
+      "hex": [
+        "1D144",
+        "08EA"
+      ],
+      "nombre": "partícula musical con punto",
+      "miembros": [
+        "par.musica.plus-notehead",
+        "sig.arabe.dot-above"
+      ],
+      "utf16": 3,
+      "grafemas": 1,
+      "rol": "par",
+      "croquis": "*",
+      "tier": "riesgo",
+      "motivo_tier": "mínimo de los miembros: 1D144=riesgo, 08EA=universal",
+      "atomico": true,
+      "requiere_base_previa": false,
+      "paletas": [
+        "etereo"
+      ],
+      "frecuencia": 1,
+      "origen": [
+        "curacion"
+      ],
+      "revisado": true
+    }
+  ]
+}

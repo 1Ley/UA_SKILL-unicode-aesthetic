@@ -1,0 +1,204 @@
+{
+  "version": 1,
+  "_lee_esto": [
+    "Archivo CURADO A MANO. Un perfil es un registro estético: acota qué esqueletos,",
+    "qué paletas, qué densidad y qué riesgo tipográfico se admiten para un caso de uso.",
+    "",
+    "Los perfiles son DATOS que lee el validador, no prosa que el modelo pueda hojear",
+    "por encima. Un perfil que prohíbe la dispersión la prohíbe de verdad: el plan",
+    "falla con E003, no queda a criterio de nadie.",
+    "",
+    "Para un caso nuevo, copia el registro más parecido y ajústalo. `ua perfiles` los",
+    "lista con sus superficies."
+  ],
+  "perfiles": [
+    {
+      "id": "discord-reglas",
+      "nombre": "Discord · reglas y formal",
+      "descripcion": "Normativa, información, staff, canales de anuncios. La decoración estructura y jerarquiza; no compite con el texto. Es el caso que la mayoría de generadores hace mal por saturación.",
+      "superficies": [
+        "sup.discord-embed-desc",
+        "sup.discord-embed-titulo",
+        "sup.discord-embed-campo-valor",
+        "sup.discord-mensaje",
+        "sup.discord-tema-canal"
+      ],
+      "esqueletos": [
+        "esq.barra",
+        "esq.marco",
+        "esq.chip",
+        "esq.pila"
+      ],
+      "esqueletos_prohibidos": [
+        "esq.dispersion"
+      ],
+      "paletas": [
+        "monolinea",
+        "tinta",
+        "botanico-pastel",
+        "etereo",
+        "kawaii-comida",
+        "kawaii-cara"
+      ],
+      "tier_minimo": "moderno",
+      "densidad": [
+        0.1,
+        1
+      ],
+      "emojis_max": 2,
+      "anclas_max": 2,
+      "marcas_por_base_max": 2,
+      "texto_transformable": false,
+      "reglas_extra": [
+        "El texto de una regla nunca se transforma a letras matemáticas: un lector de pantalla lo deletrea carácter a carácter, y una norma que no se puede leer no es una norma.",
+        "La numeración va en dígitos ASCII, por lo mismo.",
+        "Cuidado con el guion inicial: `- ` al principio de línea se convierte en viñeta de Discord. Sustitúyelo por – — ─ o ⎯, que son inertes."
+      ]
+    },
+    {
+      "id": "discord-bienvenida",
+      "nombre": "Discord · bienvenida y rol",
+      "descripcion": "Mensajes de bienvenida, verificación, presentación de personaje, servidores de rol. Aquí la densidad estética es el objetivo, no un exceso.",
+      "superficies": [
+        "sup.discord-embed-desc",
+        "sup.discord-mensaje",
+        "sup.discord-embed-campo-valor",
+        "sup.discord-apodo",
+        "sup.discord-estado"
+      ],
+      "esqueletos": [
+        "esq.marco",
+        "esq.chip",
+        "esq.espejo",
+        "esq.dispersion",
+        "esq.barra",
+        "esq.pila"
+      ],
+      "esqueletos_prohibidos": [],
+      "paletas": [
+        "botanico-pastel",
+        "etereo",
+        "kawaii-comida",
+        "kawaii-cara",
+        "tinta",
+        "monolinea"
+      ],
+      "tier_minimo": "moderno",
+      "densidad": [
+        0.12,
+        0.95
+      ],
+      "emojis_max": 3,
+      "anclas_max": 3,
+      "marcas_por_base_max": 6,
+      "texto_transformable": true,
+      "literales_opacos": [
+        "<@&\\d+>",
+        "<@!?\\d+>",
+        "<#\\d+>",
+        "<a?:\\w+:\\d+>",
+        "@everyone",
+        "@here"
+      ],
+      "reglas_extra": [
+        "Las menciones de rol, los enlaces de canal y los emojis personalizados son sintaxis de Discord con formato exacto. Van como texto opaco: el validador no los decora ni los escapa, porque cualquier retoque los rompe."
+      ]
+    },
+    {
+      "id": "bios",
+      "nombre": "Bios · Instagram, Discord, TikTok y otras",
+      "descripcion": "Biografías cortas con tope duro. Lo que manda aquí es el presupuesto: cada carácter cuenta, y los astrales cuentan doble.",
+      "superficies": [
+        "sup.ig-bio",
+        "sup.discord-bio",
+        "sup.tiktok-bio",
+        "sup.x-bio",
+        "sup.telegram-bio",
+        "sup.twitch-bio",
+        "sup.discord-estado"
+      ],
+      "esqueletos": [
+        "esq.chip",
+        "esq.espejo",
+        "esq.dispersion",
+        "esq.pila",
+        "esq.barra"
+      ],
+      "esqueletos_prohibidos": [
+        "esq.marco"
+      ],
+      "paletas": [
+        "botanico-pastel",
+        "etereo",
+        "kawaii-cara",
+        "kawaii-comida",
+        "tinta",
+        "monolinea"
+      ],
+      "tier_minimo": "moderno",
+      "densidad": [
+        0.1,
+        0.95
+      ],
+      "emojis_max": 3,
+      "anclas_max": 3,
+      "marcas_por_base_max": 6,
+      "texto_transformable": true,
+      "reglas_extra": [
+        "En Instagram NFKC está activo: ﹏ se vuelve _ y ﹫ se vuelve @. E014 es error, no aviso.",
+        "Las palabras por las que quieras que te encuentren van en ASCII plano. NFKC pliega 𝕗𝕒𝕟𝕔𝕪 a fancy, y no hay forma de comprobar desde fuera si el buscador de la plataforma normaliza o no; en ASCII funciona en ambos casos.",
+        "El marco está prohibido: no hay presupuesto para una caja multilínea en 150 unidades, y menos en los 80 de TikTok."
+      ]
+    },
+    {
+      "id": "codigo",
+      "nombre": "Código · constantes y embeds en cualquier repo",
+      "descripcion": "Emite la decoración lista para pegar en un proyecto. No está atado a ninguna librería: el emisor se elige con --formato. Hereda las restricciones estéticas del perfil visual que le indiques.",
+      "superficies": [
+        "sup.generica-codigo",
+        "sup.discord-embed-desc",
+        "sup.discord-embed-titulo",
+        "sup.readme"
+      ],
+      "esqueletos": [
+        "esq.barra",
+        "esq.chip",
+        "esq.espejo",
+        "esq.marco",
+        "esq.pila"
+      ],
+      "esqueletos_prohibidos": [],
+      "paletas": [
+        "monolinea",
+        "tinta",
+        "botanico-pastel",
+        "etereo",
+        "kawaii-comida",
+        "kawaii-cara"
+      ],
+      "tier_minimo": "moderno",
+      "densidad": [
+        0.05,
+        1
+      ],
+      "emojis_max": 2,
+      "anclas_max": 2,
+      "marcas_por_base_max": 6,
+      "texto_transformable": true,
+      "hereda_de": "el perfil visual que se pase con --perfil-visual",
+      "emisores": [
+        "texto",
+        "json",
+        "discordjs",
+        "discordpy",
+        "constantes",
+        "md"
+      ],
+      "reglas_extra": [
+        "Todos los emisores sacan los strings decorativos como escapes \\uXXXX. El archivo generado queda en ASCII puro, así que sobrevive a cualquier editor, a cualquier core.autocrlf y a cualquier terminal — incluida una consola cp1252, que destruiría los caracteres astrales sin avisar.",
+        "La decoración se emite como constantes con nombre, separada del contenido. Así se puede cambiar el texto sin volver a tocar los símbolos."
+      ]
+    }
+  ],
+  "_calibracion": "Los rangos de densidad y los topes de ancla salen de medir las 88 lineas del corpus humano, no de estimarlos. Si una regla salta sobre trabajo humano genuino, la regla esta mal."
+}

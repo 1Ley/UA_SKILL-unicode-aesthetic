@@ -1,0 +1,184 @@
+{
+  "version": 1,
+  "_lee_esto": [
+    "Archivo CURADO A MANO. Cada registro es un destino donde puede acabar el texto.",
+    "",
+    "Añadir un destino nuevo —un panel de Twitch, una cabecera de README, el banner de",
+    "una CLI, la UI de un juego— es añadir un registro aquí. No hay que tocar ningún",
+    ".mjs: el validador lee estos campos y actúa en consecuencia. Es lo que hace la",
+    "skill universal en vez de específica de una plataforma.",
+    "",
+    "CAMPOS",
+    "  limite_utf16      presupuesto en unidades UTF-16 (el pesimista: un jeroglífico",
+    "                    cuesta 2). Discord cuenta de forma inconsistente entre sus",
+    "                    propias superficies, así que se presupuesta por la más cara.",
+    "  trim_extremos     recorta espacio en blanco al principio y al final. El recorte",
+    "                    mira la propiedad Unicode White_Space, no 'parece vacío': por",
+    "                    eso ㅤ y ⠀ sobreviven y el NBSP no.",
+    "  normaliza_nfkc    si es true, E014 pasa de aviso a error: ﹏ se vuelve _ y ﹫ se",
+    "                    vuelve @, o sea que la decoración se convierte en sintaxis.",
+    "  markdown          qué parser corre encima: discord | ninguno | limitado",
+    "  presupuesto_grupo si varias superficies comparten un tope común"
+  ],
+  "superficies": [
+    {
+      "id": "sup.discord-embed-desc",
+      "nombre": "Discord · descripción de embed",
+      "limite_utf16": 4096, "trim_extremos": true, "permite_saltos": true,
+      "markdown": "discord", "normaliza_nfkc": false,
+      "presupuesto_grupo": "discord-embed-total",
+      "documentado": "docs.discord.com/developers/resources/message"
+    },
+    {
+      "id": "sup.discord-embed-titulo",
+      "nombre": "Discord · título de embed",
+      "limite_utf16": 256, "trim_extremos": true, "permite_saltos": false,
+      "markdown": "ninguno", "normaliza_nfkc": false,
+      "presupuesto_grupo": "discord-embed-total",
+      "nota": "El título NO renderiza markdown, así que aquí los caracteres activos son inocuos."
+    },
+    {
+      "id": "sup.discord-embed-campo-nombre",
+      "nombre": "Discord · nombre de campo",
+      "limite_utf16": 256, "trim_extremos": true, "permite_saltos": false,
+      "markdown": "ninguno", "normaliza_nfkc": false,
+      "presupuesto_grupo": "discord-embed-total"
+    },
+    {
+      "id": "sup.discord-embed-campo-valor",
+      "nombre": "Discord · valor de campo",
+      "limite_utf16": 1024, "trim_extremos": true, "permite_saltos": true,
+      "markdown": "discord", "normaliza_nfkc": false,
+      "presupuesto_grupo": "discord-embed-total"
+    },
+    {
+      "id": "sup.discord-embed-pie",
+      "nombre": "Discord · pie de embed",
+      "limite_utf16": 2048, "trim_extremos": true, "permite_saltos": false,
+      "markdown": "ninguno", "normaliza_nfkc": false,
+      "presupuesto_grupo": "discord-embed-total"
+    },
+    {
+      "id": "sup.discord-mensaje",
+      "nombre": "Discord · contenido de mensaje",
+      "limite_utf16": 2000, "trim_extremos": true, "permite_saltos": true,
+      "markdown": "discord", "normaliza_nfkc": false,
+      "nota": "Los bots están siempre limitados a 2000 aunque el usuario tenga Nitro."
+    },
+    {
+      "id": "sup.discord-bio",
+      "nombre": "Discord · Sobre mí",
+      "limite_utf16": 190, "trim_extremos": true, "permite_saltos": true,
+      "markdown": "discord", "normaliza_nfkc": false
+    },
+    {
+      "id": "sup.discord-apodo",
+      "nombre": "Discord · apodo / nombre para mostrar",
+      "limite_utf16": 32, "trim_extremos": true, "permite_saltos": false,
+      "markdown": "ninguno", "normaliza_nfkc": false,
+      "prohibe_literales": ["@", "#", ":", "`"],
+      "nota": "Las marcas combinantes cuentan contra el tope: 32 unidades se agotan mucho antes de lo que parece si hay diacríticos apilados."
+    },
+    {
+      "id": "sup.discord-estado",
+      "nombre": "Discord · estado personalizado",
+      "limite_utf16": 128, "trim_extremos": true, "permite_saltos": false,
+      "markdown": "ninguno", "normaliza_nfkc": false,
+      "nota": "Es la superficie donde está documentado que cuenta unidades UTF-16 y no codepoints."
+    },
+    {
+      "id": "sup.discord-nombre-canal",
+      "nombre": "Discord · nombre de canal",
+      "limite_utf16": 100, "trim_extremos": true, "permite_saltos": false,
+      "markdown": "ninguno", "normaliza_nfkc": false,
+      "minusculiza": true,
+      "espacios_a_guion": ["0020", "00A0", "1680", "180E", "2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "200A", "200B", "202F", "205F", "3000", "FEFF"],
+      "nota": "U+3164 y U+2800 NO están en esa lista, así que son los únicos espaciadores que sobreviven aquí. U+200B y U+FEFF se vuelven guiones visibles (E015)."
+    },
+    {
+      "id": "sup.discord-tema-canal",
+      "nombre": "Discord · tema de canal",
+      "limite_utf16": 1024, "trim_extremos": true, "permite_saltos": true,
+      "markdown": "limitado", "normaliza_nfkc": false
+    },
+    {
+      "id": "sup.ig-bio",
+      "nombre": "Instagram · biografía",
+      "limite_utf16": 150, "trim_extremos": true, "permite_saltos": "solo-web",
+      "markdown": "ninguno", "normaliza_nfkc": true,
+      "nota": "NFKC activo: E014 sube a error. Los saltos de línea solo sobreviven editando desde instagram.com en navegador; la app móvil los quita. Las palabras que quieras que sean buscables van en ASCII plano."
+    },
+    {
+      "id": "sup.ig-caption",
+      "nombre": "Instagram · pie de publicación",
+      "limite_utf16": 2200, "trim_extremos": true, "permite_saltos": true,
+      "markdown": "ninguno", "normaliza_nfkc": true
+    },
+    {
+      "id": "sup.tiktok-bio",
+      "nombre": "TikTok · biografía",
+      "limite_utf16": 80, "trim_extremos": true, "permite_saltos": true,
+      "markdown": "ninguno", "normaliza_nfkc": true,
+      "nota": "El tope más ajustado de todos: solo caben un chip o un espejo corto."
+    },
+    {
+      "id": "sup.x-bio",
+      "nombre": "X / Twitter · biografía",
+      "limite_utf16": 160, "trim_extremos": true, "permite_saltos": true,
+      "markdown": "ninguno", "normaliza_nfkc": false
+    },
+    {
+      "id": "sup.telegram-bio",
+      "nombre": "Telegram · biografía",
+      "limite_utf16": 70, "trim_extremos": true, "permite_saltos": false,
+      "markdown": "ninguno", "normaliza_nfkc": false
+    },
+    {
+      "id": "sup.twitch-bio",
+      "nombre": "Twitch · sobre mí",
+      "limite_utf16": 300, "trim_extremos": true, "permite_saltos": true,
+      "markdown": "ninguno", "normaliza_nfkc": false
+    },
+    {
+      "id": "sup.youtube-descripcion",
+      "nombre": "YouTube · descripción de canal",
+      "limite_utf16": 1000, "trim_extremos": true, "permite_saltos": true,
+      "markdown": "ninguno", "normaliza_nfkc": false
+    },
+    {
+      "id": "sup.steam-perfil",
+      "nombre": "Steam · información del perfil",
+      "limite_utf16": 8000, "trim_extremos": true, "permite_saltos": true,
+      "markdown": "limitado", "normaliza_nfkc": false
+    },
+    {
+      "id": "sup.readme",
+      "nombre": "GitHub · README / Markdown",
+      "limite_utf16": 100000, "trim_extremos": false, "permite_saltos": true,
+      "markdown": "discord", "normaliza_nfkc": false,
+      "nota": "El markdown de GitHub comparte con Discord los caracteres activos, así que las mismas reglas de escape sirven."
+    },
+    {
+      "id": "sup.generica-plana",
+      "nombre": "Genérica · texto plano sin límite",
+      "limite_utf16": 100000, "trim_extremos": false, "permite_saltos": true,
+      "markdown": "ninguno", "normaliza_nfkc": false,
+      "nota": "Úsala cuando el destino no está en esta lista y no tiene parser encima. Es el punto de partida para añadir uno nuevo."
+    },
+    {
+      "id": "sup.generica-codigo",
+      "nombre": "Genérica · constante en código fuente",
+      "limite_utf16": 100000, "trim_extremos": false, "permite_saltos": true,
+      "markdown": "ninguno", "normaliza_nfkc": false,
+      "forzar_escape": true,
+      "nota": "Emite siempre escapes \\uXXXX. El archivo generado queda en ASCII puro, así que sobrevive a cualquier editor, cualquier configuración de git y cualquier transporte."
+    }
+  ],
+  "presupuestos_grupo": [
+    {
+      "id": "discord-embed-total",
+      "limite_utf16": 6000,
+      "nota": "Suma de título + descripción + nombres y valores de campo + pie + autor de TODOS los embeds del mensaje, no de cada uno. Es la restricción que más sorprende de la API de Discord."
+    }
+  ]
+}

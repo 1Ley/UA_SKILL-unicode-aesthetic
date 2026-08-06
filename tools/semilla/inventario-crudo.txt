@@ -1,0 +1,71 @@
+# INVENTARIO SEMILLA — vocabulario recolectado, agrupado por el humano
+#
+# Segunda fuente de vocabulario, distinta del corpus. Aquí van los símbolos que el
+# humano ha coleccionado y agrupado pero con los que todavía no ha compuesto nada.
+#
+# La diferencia con corpus-crudo.txt importa y es deliberada:
+#   corpus     → el carácter aparece en una composición real. Hereda su paleta del
+#                uso, y entra `revisado: true` si la heurística de rol es segura.
+#   inventario → el carácter está agrupado por un humano pero sin uso todavía. Entra
+#                con la paleta del grupo y `revisado: false`.
+# Componer con un carácter del inventario (vía /ua aprender) lo promociona.
+#
+# Las AGRUPACIONES de este archivo son curación humana pura: que `‧ ₊ ˖ • ･` vayan
+# juntos no es derivable de ninguna propiedad Unicode — esos cinco caracteres viven
+# en cuatro bloques distintos y solo se parecen en cómo se usan. Preservar el grupo
+# es preservar el criterio.
+#
+# FORMATO
+#   --- <rol-sugerido> | <paleta> | <nota>
+#   ...caracteres separados por espacios...
+
+--- par | etereo | Puntos y hairlines: el tejido conectivo entre elementos
+ ‧   ₊    ˖    •   ･   ۰   𝄒  ·̩    ᮫     ⸼    ˒   ⊹  ꯣ    ꭛   ° ˙  ݁ ݂ ˳ ⁺ ໋ ࣭ ۟ ۫ ᛫ ֗ ֒ ֹ ׂ ׁ ׄ ׅ
+
+--- par | etereo | Estrellas y destellos
+✧ ✦ ⋆ ★ ☆ ⭑ ⭒ ✩ ✫ ✬ ✮ ✯ ✰ ⁕ ⁑ ✢ ✣ ✤ ✥ ❋ ✱ ✲ ✳ ⚝ ⭐ 𖤐 𖥔 𖥧 𖦹 𓇬 𓇼 ⟡ ◈ ✶ ✷ ⁘ ⁙
+
+--- par | botanico-pastel | Botánico: hojas, brotes, ramas
+𓂃 𓂅 𓍢 𓍯 𓆸 𓆹 𓆼 𓋼 𓏲 ⸙ ꕀ ꕥ ❀ ❁ ✿ ❃ ❊ ჱ ᨒ ᨎ ᨌ ⚘ ☘ ⌇ ∿ 〜 ꩜
+
+--- par | etereo | Acuático y marino
+𓆝 𓆟 𓆞 𓆡 𓇋 𓈒 𓈀 ᨒ ∿ ⌇ ≈ 〰 ﹏ ︾ ﹋ ༄ ༅ ⏝ ⏜
+
+--- cor | kawaii-cara | Corchetes y envolturas de kaomoji
+꒰ ꒱ ໒ ꒳ ૮ ა ₍ ₎ ⟨ ⟩ ﹙ ﹚ ﹛ ﹜ ﹝ ﹞ ⦅ ⦆ ⁅ ⁆ ⌜ ⌝ ⌞ ⌟ ⎡ ⎤ ⎣ ⎦ ❨ ❩ ❪ ❫ ⟦ ⟧
+
+--- trz | monolinea | Trazos, reglas y esquinas de caja
+─ ━ │ ┃ ┄ ┅ ┆ ┇ ┈ ┉ ┊ ┋ ┌ ┐ └ ┘ ├ ┤ ┬ ┴ ┼ ╭ ╮ ╯ ╰ ═ ║ ╔ ╗ ╚ ╝ ▁ ▂ ▃ ▔ ▕ ░ ▒ ▓ █ ▖ ▗ ▘ ▝ ▞ ▟ ⎯ ⸻ ⸺ – —
+
+--- fil | monolinea | Arcos y conectores curvos
+︵ ︶ ︷ ︸ ︹ ︺ ︻ ︼ ︽ ︾ ︿ ﹀ ﹁ ﹂ ﹃ ﹄ ﹇ ﹈ ⏠ ⏡ ⌒ ⌓ ⏞ ⏟ ⌢ ⌣ ‿ ⁀ ⁔
+
+--- par | monolinea | Cuadrados, círculos y geometría
+■ □ ▪ ▫ ◆ ◇ ◈ ● ○ ◌ ◍ ◎ ◐ ◑ ◒ ◓ ◖ ◗ ◜ ◝ ◞ ◟ ◠ ◡ ▲ △ ▼ ▽ ◤ ◥ ◣ ◢ ⬚ ⬛ ⬜ ⌗ ⌸ ⌘ ⌬ ▦ ▧ ▨ ▩ ⿻ ⿴
+
+--- par | tinta | Marcas técnicas y tipográficas
+⌗ ⍝ ⎙ ⌯ ⌾ ⍟ ⍉ ⌁ ⌇ ≡ ≣ ⋕ ⋮ ⋯ ⁝ ⁞ ﹕ ﹔ ﹅ ﹆ ﹫ ＠ ＃ ％ ＆ ﹟ ♯ ⧉ ⧅ ⧄
+
+--- anc | etereo | Corazones y afecto
+♡ ♥ ❤ ❥ ❣ ღ ᥫ ᭡ ♡̷ ᰔ ᰢ ⟡ ෆ ღ ♢ ♤ ♧ ♠ ♣ ♦
+
+--- anc | tinta | Ideogramas y kana usados como ancla
+神 愛 情 怀 太 陽 最 高 名 妥 姉 路 困 書 寶 貝 术 术 ク マ ノ ャ ッ ヰ ヾ ゚ ﾉ ﾟ 술 웄 폌 포 퐃 넌
+
+--- sig | etereo | Marcas combinantes: se pegan al carácter anterior
+̼ ͡ ͜ ͛ ͙ ͘ ֗ ֒ ֹ ׂ ׁ ׄ ׅ ࣪ ࣭ ࣮ ࣯ ᩨ ᩧ ᩣ ᩔ ᪲ ᪶ ᭤ ᳩ ᳤ ⃝ ⃘ ⃟ ⃕ ⃞ ⃚ ᷅ ᷄ ̶ ̸ ̷ ֟ ֜ ֞
+
+--- esp | monolinea | Espaciadores estructurales verificados
+⠀ ㅤ
+
+--- par | etereo | Flechas y direccionales
+↷ ↶ ⤷ ⤶ ➤ ➜ ➝ ➞ ⟶ ⟵ ⇢ ⇠ ↳ ↰ ↱ ⇗ ⇘ ⌁ ⤙ ⤚ ↝ ↭
+
+--- par | kawaii-comida | Marcas coreanas y hangul decorativo
+ᅠ ㆍ ㄱ ㄴ ㄷ ㄹ ㅁ ㅂ ㅅ ㅇ ㅈ ㅊ ㅋ ㅌ ㅍ ㅎ
+
+--- par | etereo | Numerales y dígitos decorativos de otros sistemas
+୨ ୧ ৎ ੭ ૪ ೨ ೭ ໒ ໑ ๑ ໓ ᥭ ᧙ ୭ ᠀ 𑁯 ५ ७ ২ १ ໖
+
+--- par | tinta | Fragmentos silábicos usados como ornamento
+ᘏ ᕱ ꫂ ζ ꔛ ꔵ ꕤ ᨦ ᯓ ᯤ ᥲ ᥉ ᥴ ꞈ ꒟ ᜔ ᜵ ᜴ ᝪ ៚ ៳ ᠉ ᤳ ᨓ ᭝ ᱺ ᳃ ໋ ঌ ৳ ௰ ౾ ೱ ຯ ໌

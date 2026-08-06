@@ -1,0 +1,22 @@
+{
+  "name": "ua",
+  "version": "1.0.0",
+  "description": "Ensamblador de decoración Unicode estética de mundo cerrado: compone a partir de una biblioteca curada en vez de improvisar glifos.",
+  "author": {
+    "name": "1Ley",
+    "url": "https://github.com/1Ley"
+  },
+  "homepage": "https://github.com/1Ley/UA---unicode-aesthetic-SKILL-",
+  "repository": "https://github.com/1Ley/UA---unicode-aesthetic-SKILL-",
+  "license": "MIT",
+  "keywords": [
+    "unicode",
+    "discord",
+    "estetica",
+    "decoracion",
+    "bio",
+    "embed",
+    "kaomoji",
+    "tipografia"
+  ]
+}

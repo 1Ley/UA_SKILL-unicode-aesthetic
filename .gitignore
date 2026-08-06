@@ -1,0 +1,11 @@
+# UCD descargado en build-time. No se versiona: pesa ~5 MB y se puede regenerar con
+# `node tools/construir-datos.mjs`. Lo que sí se versiona es el dataset derivado.
+tools/ucd/
+
+# Temporales de la ingesta (/ua aprender) y respaldos automáticos.
+.tmp/
+*.respaldo-*.json
+
+# Paquetes generados
+*.skill
+node_modules/

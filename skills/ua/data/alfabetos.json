@@ -1,0 +1,179 @@
+{
+  "version": 1,
+  "ucd": "16.0.0",
+  "generado_por": "tools/construir-datos.mjs",
+  "aviso": "Generado. No editar a mano: los cambios se pierden. El criterio humano va en tools/semilla/curacion.json; el vocabulario, en tools/semilla/corpus-crudo.txt.",
+  "total": 10,
+  "alfabetos": [
+    {
+      "id": "alf.sans",
+      "estilo": "sans",
+      "cobertura": 19,
+      "mapa": {
+        "a": "1D5BA",
+        "b": "1D5BB",
+        "c": "1D5BC",
+        "e": "1D5BE",
+        "f": "1D5BF",
+        "g": "1D5C0",
+        "h": "1D5C1",
+        "i": "1D5C2",
+        "k": "1D5C4",
+        "l": "1D5C5",
+        "m": "1D5C6",
+        "n": "1D5C7",
+        "o": "1D5C8",
+        "r": "1D5CB",
+        "s": "1D5CC",
+        "t": "1D5CD",
+        "u": "1D5CE",
+        "w": "1D5D0",
+        "x": "1D5D1"
+      },
+      "variantes": {},
+      "bloques": [
+        "Mathematical Alphanumeric Symbols"
+      ]
+    },
+    {
+      "id": "alf.sans-negrita-cursiva",
+      "estilo": "sans-negrita-cursiva",
+      "cobertura": 7,
+      "mapa": {
+        "c": "1D658",
+        "e": "1D65A",
+        "i": "1D65E",
+        "n": "1D663",
+        "p": "1D665",
+        "r": "1D667",
+        "s": "1D668"
+      },
+      "variantes": {},
+      "bloques": [
+        "Mathematical Alphanumeric Symbols"
+      ]
+    },
+    {
+      "id": "alf.negrita-cursiva",
+      "estilo": "negrita-cursiva",
+      "cobertura": 5,
+      "mapa": {
+        "g": "1D488",
+        "h": "1D489",
+        "i": "1D48A",
+        "l": "1D48D",
+        "t": "1D495"
+      },
+      "variantes": {},
+      "bloques": [
+        "Mathematical Alphanumeric Symbols"
+      ]
+    },
+    {
+      "id": "alf.mono",
+      "estilo": "mono",
+      "cobertura": 5,
+      "mapa": {
+        "a": "1D68A",
+        "e": "1D68E",
+        "h": "1D691",
+        "r": "1D69B",
+        "t": "1D69D"
+      },
+      "variantes": {},
+      "bloques": [
+        "Mathematical Alphanumeric Symbols"
+      ]
+    },
+    {
+      "id": "alf.cursiva",
+      "estilo": "cursiva",
+      "cobertura": 4,
+      "mapa": {
+        "f": "1D453",
+        "o": "1D45C",
+        "s": "1D460",
+        "v": "1D463"
+      },
+      "variantes": {},
+      "bloques": [
+        "Mathematical Alphanumeric Symbols"
+      ]
+    },
+    {
+      "id": "alf.script",
+      "estilo": "script",
+      "cobertura": 4,
+      "mapa": {
+        "f": "1D4BB",
+        "i": "1D4BE",
+        "t": "1D4C9",
+        "w": "1D4CC"
+      },
+      "variantes": {},
+      "bloques": [
+        "Mathematical Alphanumeric Symbols"
+      ]
+    },
+    {
+      "id": "alf.sans-negrita",
+      "estilo": "sans-negrita",
+      "cobertura": 4,
+      "mapa": {
+        "b": "1D5EF",
+        "e": "1D5F2",
+        "l": "1D5F9",
+        "o": "1D5FC"
+      },
+      "variantes": {},
+      "bloques": [
+        "Mathematical Alphanumeric Symbols"
+      ]
+    },
+    {
+      "id": "alf.homoglifo",
+      "estilo": "homoglifo",
+      "cobertura": 2,
+      "mapa": {
+        "a": "0251",
+        "i": "0131"
+      },
+      "variantes": {
+        "i": [
+          "0131",
+          "03B9",
+          "13A5"
+        ]
+      },
+      "bloques": [
+        "IPA Extensions",
+        "Latin Extended-A"
+      ]
+    },
+    {
+      "id": "alf.versalita",
+      "estilo": "versalita",
+      "cobertura": 2,
+      "mapa": {
+        "o": "1D0F",
+        "v": "1D20"
+      },
+      "variantes": {},
+      "bloques": [
+        "Phonetic Extensions"
+      ]
+    },
+    {
+      "id": "alf.script-negrita",
+      "estilo": "script-negrita",
+      "cobertura": 1,
+      "mapa": {
+        "o": "1D4F8"
+      },
+      "variantes": {},
+      "bloques": [
+        "Mathematical Alphanumeric Symbols"
+      ]
+    }
+  ]
+}

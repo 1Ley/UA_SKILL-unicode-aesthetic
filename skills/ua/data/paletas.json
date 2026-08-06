@@ -1,0 +1,121 @@
+{
+  "version": 1,
+  "ucd": "16.0.0",
+  "generado_por": "tools/construir-datos.mjs",
+  "aviso": "Generado. No editar a mano: los cambios se pierden. El criterio humano va en tools/semilla/curacion.json; el vocabulario, en tools/semilla/corpus-crudo.txt.",
+  "paletas": {
+    "botanico-pastel": {
+      "nombre": "Botánico pastel",
+      "descripcion": "Flores, brotes y trazo fino. El registro más común en bios y bienvenidas.",
+      "familias_emoji": [
+        "flor",
+        "planta",
+        "fruta",
+        "nube"
+      ],
+      "prohibe_familias": [
+        "gotico",
+        "gamer",
+        "arma"
+      ],
+      "temperatura": "calida",
+      "densidad_tipica": [
+        0.35,
+        0.6
+      ]
+    },
+    "etereo": {
+      "nombre": "Etéreo",
+      "descripcion": "Estrellas, destellos y aire. Mucho espaciador, poca tinta.",
+      "familias_emoji": [
+        "astro",
+        "clima",
+        "sueno"
+      ],
+      "prohibe_familias": [
+        "comida",
+        "gamer"
+      ],
+      "temperatura": "fria",
+      "densidad_tipica": [
+        0.15,
+        0.45
+      ]
+    },
+    "kawaii-comida": {
+      "nombre": "Kawaii comida",
+      "descripcion": "Dango, sushi, postres. Marcos de caja y listas colgadas.",
+      "familias_emoji": [
+        "comida",
+        "postre"
+      ],
+      "prohibe_familias": [
+        "gotico",
+        "arma"
+      ],
+      "temperatura": "calida",
+      "densidad_tipica": [
+        0.3,
+        0.65
+      ]
+    },
+    "kawaii-cara": {
+      "nombre": "Kawaii cara",
+      "descripcion": "Kaomojis. Los corchetes yi y las manos gujarati son la firma.",
+      "familias_emoji": [
+        "animal",
+        "cara"
+      ],
+      "prohibe_familias": [
+        "gotico",
+        "arma"
+      ],
+      "temperatura": "calida",
+      "densidad_tipica": [
+        0.6,
+        1
+      ]
+    },
+    "monolinea": {
+      "nombre": "Monolínea",
+      "descripcion": "Solo trazo y punto. Es la paleta de las reglas y lo formal.",
+      "familias_emoji": [],
+      "prohibe_familias": [
+        "comida",
+        "cara",
+        "animal",
+        "gotico"
+      ],
+      "temperatura": "neutra",
+      "densidad_tipica": [
+        0.1,
+        0.4
+      ]
+    },
+    "tinta": {
+      "nombre": "Tinta",
+      "descripcion": "Ideogramas CJK como ancla, tipografía matemática, sin emoji de color.",
+      "familias_emoji": [],
+      "prohibe_familias": [
+        "comida",
+        "cara"
+      ],
+      "temperatura": "neutra",
+      "densidad_tipica": [
+        0.2,
+        0.5
+      ]
+    },
+    "experimental": {
+      "nombre": "Experimental",
+      "descripcion": "Cuarentena. Todo lo aprendido por /ua aprender aterriza aquí hasta que un humano lo revisa. Ningún perfil que exija tier universal o moderno la acepta.",
+      "familias_emoji": [],
+      "prohibe_familias": [],
+      "temperatura": "neutra",
+      "densidad_tipica": [
+        0,
+        1
+      ]
+    }
+  }
+}

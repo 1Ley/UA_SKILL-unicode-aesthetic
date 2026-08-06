@@ -1,0 +1,161 @@
+{
+  "version": 1,
+  "_lee_esto": [
+    "Archivo CURADO A MANO. construir-datos.mjs no lo sobrescribe.",
+    "",
+    "Un esqueleto es una gramática de línea con contrato de slots. El contrato es lo",
+    "que convierte 'esta composición está mal montada' en un error mecánico (E003) en",
+    "vez de un juicio estético. El ensamblador elige QUÉ va en cada slot —ahí está su",
+    "libertad creativa— pero no puede elegir la forma de la línea ni saltarse un slot",
+    "obligatorio.",
+    "",
+    "`ensamblado` es una lista de pasos que ejecuta el resolver:",
+    "  { slot: <nombre> }                 inserta el contenido del slot",
+    "  { slot: <n>, orden: 'inverso' }    lo inserta en orden inverso",
+    "  { slot: <n>, espejo: true }        inserta la pareja de cada corchete",
+    "  { esp: <n> | '$slot' }             inserta n espaciadores (o los del slot)",
+    "  { texto: <slot> }                  inserta el texto del usuario, ya transformado"
+  ],
+  "esqueletos": [
+    {
+      "id": "esq.espejo",
+      "nombre": "Espejo",
+      "descripcion": "Línea palindrómica con eje central y canaleta simétrica. Es el separador por excelencia: no lleva texto y su valor está en la simetría exacta.",
+      "slots": [
+        { "nombre": "eje", "roles": ["cor", "anc", "par"], "min": 1, "max": 2, "obligatorio": true,
+          "nota": "El centro visual. En el corpus suele ser el par oriya ୨୧ o un corazón." },
+        { "nombre": "canaleta", "tipo": "entero", "rango": [0, 4], "por_defecto": 3,
+          "nota": "Espaciadores a cada lado del eje. Medido en el corpus: 3 es lo más común." },
+        { "nombre": "brazo", "roles": ["fil", "par", "sig", "trz"], "min": 1, "max": 5, "obligatorio": true,
+          "orden": "interior→exterior",
+          "nota": "Se escribe de dentro hacia fuera; el resolver lo refleja en el otro lado." },
+        { "nombre": "extremo", "roles": ["par", "anc", "cor"], "min": 0, "max": 1 }
+      ],
+      "ensamblado": [
+        { "slot": "extremo" },
+        { "esp": 1 },
+        { "slot": "brazo", "orden": "inverso" },
+        { "esp": "$canaleta" },
+        { "slot": "eje" },
+        { "esp": "$canaleta" },
+        { "slot": "brazo" },
+        { "esp": 1 },
+        { "slot": "extremo", "espejo": true }
+      ],
+      "invariantes": ["simetria_exacta_por_id", "sin_texto"],
+      "densidad_esperada": [0.45, 1.0],
+      "perfiles": ["discord-reglas", "discord-bienvenida", "bios"]
+    },
+    {
+      "id": "esq.chip",
+      "nombre": "Chip",
+      "descripcion": "Etiqueta corta con hueco de texto y aderezos asimétricos a los lados. Es el formato de las bios y de los nombres decorados.",
+      "slots": [
+        { "nombre": "apertura", "roles": ["cor", "par", "anc"], "min": 1, "max": 1, "obligatorio": true },
+        { "nombre": "aderezo_izq", "roles": ["par", "sig", "anc", "fil"], "min": 0, "max": 3 },
+        { "nombre": "texto", "tipo": "texto", "obligatorio": true,
+          "transform_permitido": ["alf.plano", "alf.sans", "alf.sans-negrita", "alf.mono", "alf.versalita", "alf.cursiva", "alf.script"],
+          "nota": "Aquí va contenido del usuario. E005 lo limita a ASCII imprimible más acentos del español: es el único hueco por donde podría colarse un glifo inventado." },
+        { "nombre": "aderezo_der", "roles": ["par", "sig", "anc", "fil"], "min": 0, "max": 3 },
+        { "nombre": "cierre", "roles": ["cor", "par", "anc"], "min": 1, "max": 1, "obligatorio": true }
+      ],
+      "ensamblado": [
+        { "slot": "apertura" }, { "esp": 1 },
+        { "slot": "aderezo_izq" }, { "esp": 1 },
+        { "texto": "texto" }, { "esp": 1 },
+        { "slot": "aderezo_der" }, { "esp": 1 },
+        { "slot": "cierre" }
+      ],
+      "invariantes": ["texto_no_vacio"],
+      "densidad_esperada": [0.35, 0.80],
+      "perfiles": ["bios", "discord-bienvenida", "discord-reglas"]
+    },
+    {
+      "id": "esq.barra",
+      "nombre": "Barra",
+      "descripcion": "Regla decorativa sin texto: una tirada de trazo con un ancla o un motivo centrado. Separa secciones en embeds de reglas.",
+      "slots": [
+        { "nombre": "cuerpo", "roles": ["trz", "fil", "par"], "min": 1, "max": 3, "obligatorio": true },
+        { "nombre": "largo", "tipo": "entero", "rango": [3, 8], "por_defecto": 5,
+          "nota": "Repeticiones del cuerpo a cada lado. Se limita a 8 porque un lector de pantalla lee cada repetición: una tirada de 40 se anuncia 40 veces." },
+        { "nombre": "centro", "roles": ["anc", "par", "cor"], "min": 0, "max": 2 },
+        { "nombre": "remate", "roles": ["par", "anc"], "min": 0, "max": 1 }
+      ],
+      "ensamblado": [
+        { "slot": "remate" },
+        { "slot": "cuerpo", "repetir": "$largo" },
+        { "esp": 1 }, { "slot": "centro" }, { "esp": 1 },
+        { "slot": "cuerpo", "repetir": "$largo" },
+        { "slot": "remate", "espejo": true }
+      ],
+      "invariantes": ["sin_texto"],
+      "densidad_esperada": [0.60, 1.0],
+      "perfiles": ["discord-reglas", "discord-bienvenida", "bios"]
+    },
+    {
+      "id": "esq.dispersion",
+      "nombre": "Dispersión",
+      "descripcion": "Constelación: pocos símbolos separados por tiradas irregulares de espaciador. Mucho aire, poca tinta.",
+      "slots": [
+        { "nombre": "motivos", "roles": ["par", "anc", "sig", "cor"], "min": 2, "max": 6, "obligatorio": true },
+        { "nombre": "tiradas", "tipo": "lista_enteros", "rango": [1, 6], "min": 1, "max": 7,
+          "nota": "Una tirada de espaciador entre motivo y motivo. DEBEN ser irregulares: en el corpus son 1,3,4,3,5. Una tirada uniforme dispara W104 porque es la señal que más delata una decoración generada." }
+      ],
+      "ensamblado": [{ "intercalar": ["motivos", "tiradas"] }],
+      "invariantes": ["ritmo_irregular"],
+      "densidad_esperada": [0.10, 0.35],
+      "perfiles": ["discord-bienvenida", "bios"]
+    },
+    {
+      "id": "esq.marco",
+      "nombre": "Marco",
+      "descripcion": "Caja con contenido colgado de una vertical, estilo amino: cabecera con esquina, filas colgadas y pie. Es el formato de bienvenidas y de reglas largas.",
+      "slots": [
+        { "nombre": "esquina_sup", "roles": ["trz"], "min": 1, "max": 1, "obligatorio": true },
+        { "nombre": "regla", "roles": ["trz", "fil"], "min": 1, "max": 2, "obligatorio": true },
+        { "nombre": "vertical", "roles": ["trz"], "min": 1, "max": 1, "obligatorio": true },
+        { "nombre": "esquina_inf", "roles": ["trz"], "min": 1, "max": 1, "obligatorio": true },
+        { "nombre": "vineta", "roles": ["anc", "par", "cor"], "min": 0, "max": 2 },
+        { "nombre": "titulo", "tipo": "texto", "obligatorio": false,
+          "transform_permitido": ["alf.plano", "alf.versalita", "alf.sans", "alf.sans-negrita"] },
+        { "nombre": "filas", "tipo": "lista_texto", "min": 1, "max": 12, "obligatorio": true,
+          "transform_permitido": ["alf.plano"],
+          "nota": "Las filas llevan el contenido con significado, así que van en texto plano: un lector de pantalla deletrea las letras matemáticas una a una." }
+      ],
+      "ensamblado": [
+        { "linea": [{ "slot": "esquina_sup" }, { "slot": "regla", "repetir": 4 }, { "esp": 1 }, { "slot": "vineta" }, { "esp": 1 }, { "texto": "titulo" }] },
+        { "por_fila": [{ "slot": "vertical" }, { "esp": 1 }, { "slot": "vineta" }, { "esp": 1 }, { "texto": "$fila" }] },
+        { "linea": [{ "slot": "esquina_inf" }, { "slot": "regla", "repetir": 6 }] }
+      ],
+      "invariantes": ["multilinea", "vertical_alineada"],
+      "densidad_esperada": [0.20, 0.55],
+      "perfiles": ["discord-reglas", "discord-bienvenida"]
+    },
+    {
+      "id": "esq.pila",
+      "nombre": "Pila",
+      "descripcion": "Bloque multilínea donde cada línea es un chip o una dispersión, unidas por una paleta común. Es el formato de las bios largas.",
+      "slots": [
+        { "nombre": "lineas", "tipo": "lista_subplanes", "min": 2, "max": 8, "obligatorio": true,
+          "esqueletos_permitidos": ["esq.chip", "esq.dispersion", "esq.espejo", "esq.barra"],
+          "nota": "Cada entrada es un plan completo de otro esqueleto. Un solo nivel: una pila no puede contener otra pila." },
+        { "nombre": "sangria", "tipo": "lista_enteros", "rango": [0, 12], "min": 0, "max": 8,
+          "nota": "Espaciadores al inicio de cada línea. Varía para dar el escalonado del corpus." }
+      ],
+      "ensamblado": [{ "apilar": "lineas", "sangria": "sangria" }],
+      "invariantes": ["paleta_unica", "multilinea"],
+      "densidad_esperada": [0.15, 0.70],
+      "perfiles": ["bios", "discord-bienvenida"]
+    },
+    {
+      "id": "esq.libre",
+      "nombre": "Libre",
+      "descripcion": "Sin estructura reconocida. Solo lo usa la ingesta para guardar composiciones que no encajan en ningún esqueleto. NUNCA se ofrece al ensamblador: existe para no perder material humano, no para generar.",
+      "slots": [],
+      "ensamblado": [],
+      "invariantes": [],
+      "solo_ingesta": true,
+      "perfiles": []
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+# Fuerza LF en todo el repo. `core.autocrlf=true` está puesto a nivel de sistema en
+# Git for Windows; sin esto, los archivos comprometidos difieren byte a byte del árbol
+# de trabajo y las pruebas de round-trip fallan de forma intermitente.
+* text=auto eol=lf
+
+# Los datos y el corpus semilla llevan caracteres del plano astral y marcas combinantes.
+# `-text` desactiva toda conversión de fin de línea sobre ellos. Siguen siendo texto
+# diffable (`-diff` sería lo que los marcaría como binarios; no lo usamos).
+skills/ua/data/*.json      -text
+tools/semilla/*.txt        -text

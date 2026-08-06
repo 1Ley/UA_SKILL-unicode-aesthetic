@@ -1,0 +1,260 @@
+# CORPUS SEMILLA — composiciones humanas verbatim
+#
+# Este archivo es la ÚNICA fuente de vocabulario de la biblioteca. Todo carácter que
+# la skill puede usar entra por aquí, porque un humano lo escribió en una composición
+# real. `tools/construir-datos.mjs` lo decompone y genera skills/ua/data/*.json.
+#
+# NUNCA edites este archivo a mano para "añadir un símbolo suelto". El vocabulario
+# crece pegando composiciones completas (por `/ua aprender`), no listando glifos: es
+# la propiedad que impide que la biblioteca degenere en la lista plana que hace que
+# las decoraciones generadas por IA se noten.
+#
+# FORMATO
+#   === <id> | <perfil> | <paleta> | <nota>
+#   ...líneas de la composición, verbatim, incluidos espacios...
+#
+# Los espacios finales de línea son SIGNIFICATIVOS. No los recortes.
+
+### SECCIÓN: chip — etiqueta corta con hueco de texto
+
+=== cps.0001 | bios | botanico-pastel | chip con ancla sakura y sigilos hebreos
+ᝯ ׅ  ხɑ𝗌𝖾𝗌 ֒ 🌸 ׅ  ᩔ
+
+=== cps.0002 | bios | botanico-pastel | chip con signo de exclamación como partícula
+  pɑ𝗋ɑ ֹ ᩣ ּ  𝗇𝗂𝖼𝗄𝗌 !  𖹭ິ
+
+=== cps.0003 | bios | botanico-pastel | chip con dígito kannada de apertura y tulipán
+೭ ׁ 🌷᪲ ׅ  𝗇ɑ𝗆𝖾᪶ ׂ ᰪ
+
+=== cps.0004 | bios | kawaii-comida | chip con dango y joiner invisible dentro de la palabra
+ 🍡ᩨ 𝗇ɑ𝗆꯭𝖾 ִ  Ჲ
+
+=== cps.0005 | bios | botanico-pastel | chip con flor ornamental y tie invisible
+  ᠔ ✿ ׄ  𝗇ɑ͜𝗆𝖾 🖖🏻ᩧ
+
+=== cps.0006 | bios | kawaii-comida | chip con narutomaki y virama tagalo
+ ⣴ ּ 🍥  𝗇ɑ⵿𝗆𝖾 ִ  ᳩ
+
+=== cps.0007 | bios | tinta | chip con ideograma como ancla y eje oriya
+˓  🫐  ̼  ׁ   ׅ   ୨୧   ⊹  ࣪   神
+
+=== cps.0008 | bios | botanico-pastel | chip con uva y flor, cierre en hangul
+ ֹ  ‎ ‎ ‎‎ꔫ ‎    ࣭ 🍇 ◞  ✿ .  술
+
+=== cps.0009 | bios | etereo | chip con reloj digital y campanilla
+☆ ͡    ݂     ⩇:⩇ '   ۫    🪻   ࣪    𓈒
+
+=== cps.0010 | bios | botanico-pastel | chip con castaña y bamum
+𓏲  ࣪  ˳️   🌰   ׄ    𖥨    ˖
+
+=== cps.0011 | bios | kawaii-comida | chip con croissant y corchete yi de cierre
+ ✩  ִ    ࣪    🥐     𖥔 ࣪ ˖    ꒱
+
+=== cps.0012 | bios | botanico-pastel | chip con hoja de otoño
+⭒  ׅ   🍁   ׄ   . 𖥸   ۫
+
+=== cps.0013 | bios | kawaii-comida | chip con osito y corazón con marca envolvente
+﹏ ᜔ 𓆇࣪   ˒˓   🧸      ⃘♡
+
+=== cps.0014 | bios | etereo | chip con reloj de sobremesa
+𝅄  ✿ㅤׂ  🕰️  𓈒  ✧
+
+=== cps.0015 | bios | tinta | chip con pastel de luna e ideograma mujer
+  女   ˚    𔗫    🥮   ⊹    ࣪
+
+=== cps.0016 | bios | etereo | chip con luna y estrella blanca
+🌙 .   ݁ ݂  ͡ ☆
+
+=== cps.0017 | bios | etereo | chip con ala y marca envolvente circular
+     ੭୧ .  🪽 ⃝ ࣪
+
+=== cps.0018 | bios | etereo | chip mínimo con macron invertido
+☆ ͡ __  ੭
+
+=== cps.0019 | bios | etereo | chip con año y barra vertical como separador
+ᰋ.  04'   |    ♡  ݁  ੭
+
+### SECCIÓN: espejo — línea palindrómica, separador
+
+=== cps.0020 | discord-reglas | monolinea | espejo con eje corazón y brazos oriya
+ᣟ. ୧ ♡ ୨ .ᣟ
+
+=== cps.0021 | discord-reglas | monolinea | espejo con eje oriya separado y arcos dobles
+◌︶︶   ୨ ୧ ︶︶◌
+
+=== cps.0022 | discord-bienvenida | etereo | espejo con canaleta 3 y partícula musical
+⊹ ︶ 𝅄 ࣪   ୨୧   ࣪  𝅄 ︶ ⊹ ㅤ
+
+=== cps.0023 | discord-reglas | monolinea | espejo compacto sin espaciadores
+︶⏝︶୨୧︶⏝︶
+
+=== cps.0024 | discord-reglas | monolinea | espejo con arcos superiores y canaleta 3
+⏜  .   ︵   ୨୧   ︵   .   ⏜
+
+=== cps.0025 | discord-bienvenida | etereo | espejo con arcos y eje oriya espaciado
+︶ ⏝ ︶ ୨୧ ︶ ⏝ ︶
+
+=== cps.0026 | discord-bienvenida | botanico-pastel | espejo con corchetes yi y frutas
+˗ˏˋ ꒰ 🍓🍒🍄 ꒱ ˎˊ˗
+
+=== cps.0027 | discord-reglas | monolinea | espejo con estrella central y guiones
+✦ ─── ⋆⋅☆⋅⋆ ──
+
+### SECCIÓN: dispersion — texto con espaciadores irregulares, tipo constelación
+
+=== cps.0028 | discord-bienvenida | etereo | dispersión con hangul filler y emoji sueño
+ㅤ𓈒ㅤㅤㅤ✩ㅤㅤㅤㅤׂㅤㅤㅤ💤ㅤㅤㅤㅤㅤ
+
+=== cps.0029 | discord-bienvenida | etereo | dispersión con corchete yi de cierre
+ㅤㅤ  ㅤㅤׅㅤㅤㅤ𝅄ㅤㅤ꒪ㅤㅤ꒱ㅤㅤ
+
+=== cps.0030 | discord-bienvenida | etereo | dispersión con estrella entre paréntesis pequeños
+ㅤ୨ৎㅤㅤׂㅤㅤ⌒ㅤㅤㅤ﹙⭐﹚ㅤㅤׅㅤㅤ⁉ㅤ
+
+=== cps.0031 | discord-bienvenida | etereo | dispersión con katakana no
+ㅤノㅤㅤ𓈒ㅤㅤ⊹ㅤㅤㅤㅤׅㅤㅤ✩ㅤㅤ˚
+
+=== cps.0032 | discord-bienvenida | etereo | dispersión con vía de tren y marcas halfwidth
+ⳋ୧ㅤㅤﾟㅤ⊹ㅤㅤﾉㅤㅤ🛤️
+
+### SECCIÓN: marco — caja con contenido colgado, estilo amino
+
+=== cps.0033 | discord-bienvenida | kawaii-comida | marco completo con oden, cabecera y pie
+. .╭──࿎࿎─ ︿︿ 🍢 ︿︿︿︿ .   .   .   .   .   .
+. .┊ ‹‹❛❀﹏ ɪ ʟᴏᴠᴇ ᴜ! ⿻ ─ ❨ 書 ❩   ⠈.⠈.⠈.⠈.⠈.⠈.
+. .┊✎｡｡｡tᥱᥣᥣ mᥱ ᥕhᥲt y᥆ᥙ ᥕᥲᥒᥒᥲ drᎥᥒk *ೃ࿔
+. .┊@_(( 🍣 » °........... ℛᥱᥲd thι᥉ .....◝໋࣮ᬄ゚꫶⁺࿐
+. .╰───  ⃟ੂ۪͙۫ׄ๑࿐ ︶︶︶︶︶︶ ♡⃕ ⌇. . .
+
+=== cps.0034 | discord-reglas | kawaii-comida | marco con apartados numerados
+. . . . . . ┊⿻ [Primer apartado] . . . .
+. . . . . . ┊⿻ [segundo apartado] . . . .
+. . . . . . ┊⿻ [Tercer apartado] . . . .
+. . . . . . ╰──༄ ‧₊˚───── ─── ❨ 🍙 ❩
+
+=== cps.0035 | discord-reglas | kawaii-comida | marco de caja ligera con columnas
+┌────︶.︶.︶.︶.︶.︶.︶.︶ ୭̥⋆*｡
+│ ┊┊ 🍢 . . . . ❛❜ 问题和答案 ❛❜ . . . .
+│ 🍡 ะ⸙;; ⭟❛⁰⁰¹ .... ʙᴇ ᴍʏ ᴘяɪɴᴄᴇs ....
+└────────────────╮
+
+=== cps.0036 | discord-reglas | kawaii-comida | lista colgada con viñeta repetida
+🍣  ੈ₊˚༅༴│↷◌⁺˖ [Escribe aquí]
+🍣  ੈ₊˚༅༴│.
+🍣  ੈ₊˚༅༴╰────︶.︶ ⸙ ͛ ͎ ͛  ︶.︶ ੈ₊˚༅,
+
+### SECCIÓN: barra — regla decorativa, sin texto
+
+=== cps.0037 | discord-reglas | monolinea | barra de ondas repetidas
+꒷꒦꒷꒦꒷꒦꒷꒦꒷꒦꒷
+
+=== cps.0038 | discord-reglas | monolinea | barra con tijera y línea de puntos
+-ˋˏ✄┈┈┈┈
+
+=== cps.0039 | discord-bienvenida | botanico-pastel | barra con flecha de retorno y pastel
+╰┈➤ ˙ . ꒷ 🍰 . 𖦹˙—
+
+=== cps.0040 | discord-bienvenida | etereo | barra con notación de reproductor
+▶︎ •၊၊||၊|။||||။‌‌‌‌‌၊|• 0:10
+
+=== cps.0041 | discord-reglas | monolinea | barra de puntos con separadores medios
+· · · · ﹏̈́﹏̈́﹏̈́﹏̈́﹏̈́﹏̈́﹏̈́﹏̈́﹏̈́﹏̈́﹏̈́﹏̈́﹏̈́ ༅˻˳˯ₑ❛░⃟ ⃟°˟̫
+
+### SECCIÓN: pila — bloque multilínea centrado, tipo bio larga
+
+=== cps.0042 | bios | tinta | bio multilínea con espaciadores hangul y letras matemáticas
+ㅤㅤ𝑚é𝗅𝖺𝗇𝖼𝗈𝗅ı𝖾ㅤㅤ𓂋ㅤㅤ𝖾𝗑𝗎𝗍𝗈𝗋ıᧉㅤㅤ᭤ㅤㅤ
+           ㅤㅤ𝁐𔒱ㅤㅤㅤ𝑣𝗈𝗎𝗋ㅤㅤ𝁑ㅤㅤ𝖼𝗼𝖿𝖿𝖾𝖾ㅤㅤ𓇬ㅤㅤㅤ
+               ㅤ𝑎    𝖼𝗈𝗇𝗌𝗍𝖾𝗅𝗅𝖺𝗍ı𝗈𝗇𝗌ㅤㅤ 𝓸𝒻 ㅤㅤs︭𝖙︭𝖺︭𝗋︭𝗌︭ㅤ  ׁ   𓈒ㅤㅤㅤ
+            ㅤㅤ𝑠𝗁𝗈𝗈𝗍ı𝗇𝗀ㅤㅤ─ㅤㅤ𝗲𝗌𝗍𝗋𝖾𝗅𝖺ㅤㅤ𝁍ㅤㅤ𔓕ㅤ
+              ㅤ✫ㅤ𝖼𝗁𝖺𝗆𝖻𝖾𝗋ㅤㅤ𝑜𝑓.ㅤㅤr𝖾𝖿𝗅𝖾𝖼𝗍ıonㅤׁ  .  °ㅤ
+
+=== cps.0043 | bios | etereo | pila de dos columnas con separadores
+⊱   𓈒ㅤ ૮ ֗    𝗌𝗐𝖾𝖾𝗍𝗂𝖾     ꯭🪞⟡     𝗯𝗲𝗹𝗹𝗲    ㅤㅤㅤㅤ︶⏝︶
+         ✧ ‿︵   𝓉𝓌𝒾   ⋆ ͘ .                                     𝒍𝒊𝒈𝒉𝒕    ׅ ࣪ ⊹ ⏜ ۫ .
+     ۫ ︵͡ ⁺    𝚏͟𝚕͟𝚞͟𝚛͟𝚛͟𝚢   𓇬 ׂ ֢    𝚑𝚎𝚊𝚛𝚝     ㅤㅤ☆ ᡴꪫㅤㅤㅤ
+
+=== cps.0044 | bios | etereo | pila con corchetes yi y luna
+   ꒰ ۪ ⋆🌙 ۟    𝙢͟𝙤͟𝙤͟𝙣                                        𝙥𝙧𝙞𝙣𝙘𝙚𝙨𝙨 ꯭ ꒱ㅤ
+
+### SECCIÓN: kaomoji — carita como unidad atómica
+
+=== cps.0045 | discord-bienvenida | kawaii-cara | gato durmiendo entre manos
+૮꒰ ˶• ༝ •˶꒱ა
+
+=== cps.0046 | discord-bienvenida | kawaii-cara | gatito con orejas puntiagudas
+≽^• ˕ • ྀི≼
+
+=== cps.0047 | discord-bienvenida | kawaii-cara | carita con manos y guion medio
+૮₍ ˶•⤙•˶ ₎ა
+
+=== cps.0048 | discord-bienvenida | kawaii-cara | conejo minimalista
+ᐢ..ᐢ
+
+=== cps.0049 | discord-bienvenida | kawaii-cara | conejo entre corchetes yi
+꒰ᐢ. .ᐢ꒱
+
+=== cps.0050 | discord-bienvenida | kawaii-cara | gato con patitas
+૮꒰/ฅ//ฅ//꒱ა
+
+=== cps.0051 | discord-bienvenida | kawaii-cara | carita molesta con acentos combinantes
+໒꒰ྀི -᷅ ⤙ -᷄ ꒱ྀིა
+
+=== cps.0052 | discord-bienvenida | kawaii-cara | carita feliz con brazos alzados
+૮( ྀི ੭˶ᵔᵕᵔ˶ )ྀི੭
+
+=== cps.0053 | discord-bienvenida | kawaii-cara | carita con ojos de anillo
+૮꒰˵• ﻌ •˵꒱ა
+
+=== cps.0054 | discord-bienvenida | kawaii-cara | carita con ojos entrecerrados
+꒰ ˃̶̤́ ꒳ ˂̶̤̀ ꒱
+
+=== cps.0055 | discord-bienvenida | kawaii-cara | oso durmiendo
+ᘏ ⑅ ᘏ  ഒ
+
+### SECCIÓN: ornamento — grupos cortos reutilizables
+
+=== cps.0056 | bios | etereo | ornamento de estrella con puntos suspensivos
+༉‧₊˚✧
+
+=== cps.0057 | bios | etereo | ornamento de corazón simétrico
+˖⁺‧₊˚♡˚₊‧⁺˖
+
+=== cps.0058 | bios | botanico-pastel | ornamento de nube con hueco de texto
+‧₊˚ ☁️⋅text ₊˚ෆ
+
+=== cps.0059 | bios | etereo | ornamento con luna menguante
+⋆˚✿˖°  ୭˚. ᵎᵎ.  ִֶָ࣪☾.
+
+=== cps.0060 | bios | etereo | ornamento de destello con punto medio
+୭̥°⋰˚
+
+=== cps.0061 | bios | etereo | ornamento de estrella inclinada
+⋰˚☆
+
+=== cps.0062 | bios | etereo | ornamento tibetano con asterisco
+༊*·˚
+
+=== cps.0063 | bios | etereo | ornamento de flor con coma superíndice
+✩*ೃ.⋆
+
+=== cps.0064 | bios | etereo | ornamento de gancho con corazón
+◞♡
+
+=== cps.0065 | bios | etereo | ornamento de estrella con punto y flor
+⋆.*ೃ✧
+
+=== cps.0066 | bios | kawaii-cara | ornamento de corazón con dígito tailandés
+*๑♡՞
+
+=== cps.0067 | bios | etereo | ornamento de estrella con grados
+✩˚｡⋆
+
+=== cps.0068 | bios | etereo | ornamento con marca tibetana de sección
+·.༄࿔
+
+=== cps.0069 | bios | etereo | ornamento subíndice con flor
+₊˚✩
+
+=== cps.0070 | bios | etereo | ornamento de corazón con subíndices
+‧₊˚♡
