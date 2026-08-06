@@ -237,8 +237,12 @@ export function validar(texto, opciones = {}) {
     }
 
     // ── W108 · una tirada larga se lee en voz alta una vez por repetición.
+    //
+    // Los espaciadores quedan fuera: una sangría de nueve espacios es estructura, no
+    // decoración, y contarla como "run repetido" hacía saltar el aviso en cualquier
+    // pila escalonada — que es precisamente la forma correcta de montarlas.
     let repes = 1;
-    const gs = grafemas(linea);
+    const gs = grafemas(linea).filter((g) => !/^[\s⠀ㅤ]+$/u.test(g));
     for (let k = 1; k < gs.length; k++) {
       if (gs[k] === gs[k - 1]) { repes++; if (repes > 8) break; } else repes = 1;
     }
